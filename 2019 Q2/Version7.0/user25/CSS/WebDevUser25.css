@@ -1,0 +1,97 @@
+
+body  {
+	font-family: "Marker Felt", "Comic Sans MS", fantasy;
+	color: #00ff00;
+    background-image: url("../images/WebDevUser25BG.jpg");
+    background: url("../images/WebDevUser25BG.jpg");
+    background-repeat: no-repeat;
+    background-size: 1500px 800px;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+.football   {
+    position: relative;
+    right: 300px;
+    border: 3px solid #000000;
+    
+}
+
+
+h1  {
+	font-size: 1.3em;
+	text-align: center;
+}
+
+h2  {
+        font-size: 1.1em;
+        text-align: center;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	border-collapse: collapse;
+	cellspacing: 0px;
+}
+
+tr {
+	border: 1px solid #ffffff;
+	text-align: center;
+	background-color:#9FB6CD; 
+}
+
+th {
+	text-align: left;
+	color: #ffffff;
+	background-color: #003366;
+}
+
+p   {
+    font-size: 1.1em;
+    text-align: center;
+}
+
+ol  {
+    font-size: 2em;
+    text-align: center;
+    color: royalblue
+    
+    
+}
+
+li  {
+    font-size: 1.2em;
+    text-align: center;
+    color: purple
+    
+    
+}
+
+dl{
+
+}
+
+dd{
+margin: 0;	    
+padding: 1em 0;
+}
+
+dt{
+cursor: pointer;    	    
+font-weight: bold;    
+font-size : 1.5em;    
+line-height: 2em;    
+background: #e3e3e3;    
+border-bottom: 1px solid #c5c5c5;    
+border-top: 1px solid white;}
+
+dt:first-child { border-top: none; }
+
+dt:nth-last-child(2) { border-bottom: none; }
+
+.hide { display: 
+        none;
+}

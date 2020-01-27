@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!--Version 3.0
+
+        Name: Derek Ryan
+
+        Date Completed: 11-14-19
+
+ -->
+
+  <head>
+
+ <div id="Script and stlye">
+	<link href="../CSS/day.css" rel="stylesheet" type="text/css">
+	<script src="../JS/jquery-3.4.1.js"></script>
+    <title>Games</title>
+	  </div>
+  </head>
+
+
+  <body>
+
+
+<div class="topnav">
+	<a href="../index.html">Home</a>
+	<a href="webDevUser22_music.html">Food</a>
+	<a class="active" href="WebDevUser22_Games.html">Bad Games</a>
+	<a href="WebDevUser22_lists.html">IDK</a>
+	<a href="FAQ.php">FAQ</a>
+	<a href="../kanji.php">Kanji Ranking</a>
+	<a id="tetris" href=tetris.html>Snake</a>
+	<div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Settings
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+	<div id="stylebutton" display="block">
+		<button data-file="day" class="button" id="light">Light Mode</button>
+		<button data-file="night" class="button">Objectivly Better Mode</button>
+	</div>
+  </div>	
+  </div> 
+</div>
+
+<div id="content">
+
+    <br>
+
+    <br>
+    
+    <br>
+    <script language="JavaScript">
+
+var startTime=new Date();
+var endTime=new Date();
+var startPressed=false;
+var bgChangeStarted=false;
+var maxWait=20;
+var timerID;
+
+function startTest()
+{
+ document.body.style.background=document.response.bgColorChange.options[document.response.bgColorChange.selectedIndex].text;
+ bgChangeStarted=true;
+ startTime=new Date();
+}
+
+function remark(responseTime)
+{
+ var responseString="";
+ if (responseTime < 0.20)
+ responseString="Well done!";
+ if (responseTime >= 0.20 && responseTime < 0.30)
+ responseString="Nice!";
+ if (responseTime >=0.40 && responseTime < 0.50)
+ responseString="Could be better...";
+ if (responseTime >=0.50 && responseTime < 0.80)
+ responseString="Keep practising!";
+ if (responseTime >=0.80 && responseTime < 1.1)
+ responseString="Have you been day dreaming again?";
+ if (responseTime >=1.1)
+ responseString="Did you fall asleep?";
+ return responseString;
+}
+
+function stopTest()
+{
+ if(bgChangeStarted)
+ {
+ endTime=new Date();
+ var responseTime=(endTime.getTime()-startTime.getTime())/1000;
+
+ document.body.style.background="white"; 
+ alert("Your response time is: " + responseTime + " seconds " + "\n" + remark(responseTime));
+ startPressed=false;
+ bgChangeStarted=false;
+ }
+ else
+ {
+ if (!startPressed)
+ {
+ alert("press start first to start test");
+ }
+ else
+ { 
+ clearTimeout(timerID);
+ startPressed=false; 
+ alert("cheater! you pressed too early!");
+ } 
+ }
+window.location.reload();
+console.log('window reloaded')
+}
+
+var randMULTIPLIER=0x015a4e35;
+var randINCREMENT=1;
+var today=new Date();
+var randSeed=today.getSeconds();
+
+function randNumber()
+{
+ randSeed = (randMULTIPLIER * randSeed + randINCREMENT) % (1 << 31);
+ return((randSeed >> 15) & 0x7fff) / 32767;
+}
+
+function startit()
+{
+ if(startPressed)
+ {
+ alert("Already started. Press stop to stop");
+ return;
+ }
+ else
+ {
+ startPressed=true; 
+ timerID=setTimeout('startTest()', 6000*randNumber());
+ }
+}
+
+</script>
+	<p style="text-align: left; margin: 4px;">Look in the navbar for Snake</p>
+<p>Test your Response time!</p>
+Click on "Start" first, and wait until the background color changes. As soon as it changes, hit "stop!"
+
+<form name="response">
+Change background color in: 
+<select name="bgColorChange">
+<option selected>red
+<option>blue
+<option>gray
+<option>yellow
+<option>green
+<option>purple
+<option>orange
+</select>
+<input type="button" value="start" onClick="startit()">
+<input type="button" value="stop" onClick="stopTest()">
+</form>
+
+                      
+<div id="textbubbles">
+	<img id="textbubble" src="../Images/wigflip-ds.png">
+	
+</div>
+<div id="trubbish">
+	<img src="https://cdn.bulbagarden.net/upload/e/e2/568Trubbish.png">
+</div>
+<div id="buttons">
+<div id="challengebutton">
+
+<button id="revealer">You up for a challenge?</button>
+<br>
+<button id="revealed1">Yes</button>
+<button id="revealed2">No</button>
+</div>
+</div>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+<script>
+	var link = $('link');
+	$('#stylebutton .button').on('click', function() {	
+			var $this = $(this);
+			var stylesheet = $(this).data('file');
+			link.attr('href', '../' + 'CSS/' + stylesheet + '.css');
+			$this
+			.siblings('button')
+				.removeAttr('disabled')
+				.end()
+				.attr('disabled', 'disabled')
+	});
+
+	$('#fontchange #initial').on('click', function() {
+		var button1 = document.getElementById("positive");
+		var button2 = document.getElementById("negative");
+		(button1).style.visibility = 'visible';
+		(button2).style.visibility = 'visible';
+	});
+	$('#fontchange #positive').on('click', function() {
+		var fontSize = parseInt($("body").css("font-size"));
+		fontSize = fontSize + 3 + "px";
+		$("body").css({'font-size':fontSize});
+	});
+	$('#fontchange #negative').on('click', function() {
+		var fontSize = parseInt($("body").css("font-size"));
+		fontSize = fontSize - 3 + "px";
+		$("body").css({'font-size':fontSize});
+	});
+	$('#challengebutton #revealer').on('click', function() {
+		var revealer = document.getElementById("revealer");
+		revealer.innerHTML="Are you really?"
+		var button1 = document.getElementById("revealed1");
+		(button1).style.visibility = 'visible';
+		var button2 = document.getElementById("revealed2");
+		(button2).style.visibility = 'visible';
+});
+	$('#challengebutton #revealed1').on('click', function() {
+		var x = document.getElementById("textbubble");
+		x.style.visibility = 'visible';
+	});
+	$('#challengebutton #revealed2').on('click', function() {
+		var revealer = document.getElementById("revealer");
+		revealer.innerHTML="You up for a challenge?"
+		var button1 = document.getElementById("revealed1");
+		(button1).style.visibility = 'hidden';
+		var button2 = document.getElementById("revealed2");
+		(button2).style.visibility = 'hidden';
+		var x = document.getElementById("textbubble");
+		x.style.visibility = 'hidden';
+	});
+</script>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+$(document).ready(function() {
+	var $this = document.getElementById("light");
+	$($this).attr('disabled', 'disabled')
+});
+</script>
+    
+      </div>
+
+
+    <!-- Bootstrap core JavaScript
+
+    ================================================== -->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+
+
+</body>
+
+</html>

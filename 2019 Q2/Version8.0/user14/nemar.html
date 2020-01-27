@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 3.0
+        Name:
+        Date Completed:
+ -->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="SHS WebDev Menu Sample">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        
+        <script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown(5000);
+  });
+  $("#stop").click(function(){
+    $("#panel").stop();
+  });
+});
+</script>
+<style> 
+#panel, #flip {
+  padding: 5px;
+  font-size: 18px;
+  text-align: center;
+  background-color: #555;
+  color: white;
+  border: solid 1px #666;
+  border-radius: 3px;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+    
+}
+    button {
+        color: bisque;
+        background-color: burlywood;
+    }
+    
+    h3 {
+        
+        color: darkorange;
+    }
+</style>
+        
+        <link rel="shortcut icon" href="CSS/favicon.ico"/>
+        
+        <title>Ramen Facts</title>
+        
+        <!-- Bootstrap core JS -->
+        <!-- These are needed to get the responsive menu to work -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- Custom styles for this template -->
+        <style type="text/css">
+            .menu{
+                margin: 0px;
+                background-color: bisque;
+                color:darkgoldenrod;
+            }
+            
+            .wideMargin{
+                margin: 15px;
+            
+            }
+            #footer{
+                font-size: 12px;
+                text-align: center;
+                
+            }
+            body{
+                background-image: url(https://cdn.clipart.email/afb2a421b9f49035fda3f7d896f2c9e9_ramen-black-bowl-egg-chopsticks-png-image-and-clipart-for-free-_650-573.jpeg);
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="menu" id="content">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <a href="Evanphp_Demo/index.php" class="navbar-brand">WebDev Ramen Creator</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+<!---------------------------------- Edit These Items in your Menu ------------->                        
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="Ramennutri.html" class="nav-item nav-link">Ramen Nutrition</a>
+                        <a href="photogall.html" class="nav-item nav-link">Gallery</a>
+                        <a href="personalram.html" class="nav-item nav-link">Ramen Rank</a>
+                        <a href="Ramenreasons.html" class="nav-item nav-link">Reasons for ramen</a>
+                        <a href="nemar.html" class="nav-item nav-link active">Ramen Facts</a>
+<!----------------------------------^ Edit These Items in your Menu ^ ------------->                        
+                    </div>
+                    <div class="navbar-nav ml-auto">
+                        <a href="movies.html" class="nav-item nav-link">Movies w/ ramen</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        
+        <h3>5 Ramen Facts That Will Change Your Life</h3>
+    <button id="stop">Stop sliding Facts</button>
+
+<div id="flip">Click for ramen facts</div>
+        <div id="panel">-You could live off ramen for only 150$ a year
+                        -In 1958, ramen was concidered luxurious
+                        -Ramen was the first kind of noodles to be eaten in space
+                        -The japaneese love ramen so much, they build a museum dedicated to them
+                        -ramen is a food related to high heart attack and other disorders</div>
+    </body>
+        
+        

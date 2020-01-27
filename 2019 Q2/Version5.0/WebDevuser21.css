@@ -1,0 +1,39 @@
+<html lang="en">
+<!--Version 5.0
+ Name:Michael Peck
+
+        Date Completed:
+-->
+<head>
+<title> web development user #21 </title>
+
+
+
+</head>
+
+
+
+
+
+
+
+<body>
+<center><p id="textChange"> My name is User ##</p></center>
+<button type="button" onclick="changeText()">Click if you like</button>
+<script src="JS/webDevUser21_script.js"></script>
+function changeText() {
+ document.getElementById("textChange").innerHTML="Thanks for liking my Webpage";
+    <a herf="webdevuser21.html"><button>user21
+}
+var space = " ";
+var pos = 0;
+var msg = "User 21";
+
+function Scroll(){
+document.title = msg.substring(pos, msg.length) + space +msg.substring(0,pos);
+
+pos++;
+if (pos > msg.length) pos = 0;
+window.setTimeout("Scroll()", 0);
+}
+Scroll();

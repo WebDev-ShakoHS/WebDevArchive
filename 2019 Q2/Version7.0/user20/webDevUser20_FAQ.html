@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<html>
+    
+    
+    <head>
+        
+        
+        <title>Aryan Intro to jQuery </title>
+        
+        <script src="JS/jquery-3.4.1.js"> </script>
+        
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="CSS/night.css"> 
+        
+   
+            
+        <meta charset=utf-8>
+      <link rel="icon" type="image/png" sizes="32x32" href="images/WebDevUser20.favicon.ico">
+      <link href="CSS/index.css" rel="stylesheet" type="text/css">
+      <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Test One Page Web Web ">
+
+    <!-- code obtained from https://frimmy.github.io/api-test/  -->
+
+    <title>Title</title>
+
+
+    <!-- Bootstrap core CSS -->
+
+
+    <!-- Custom styles for this template -->
+
+    <link rel="stylesheet" type="text/css"
+
+          href="https://fonts.googleapis.com/css?family=Lobster">
+
+    <link href="style.css" rel="stylesheet">
+<style>
+    
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+            ul li{
+                color: green;
+            }
+            
+            h3{
+                color: purple;
+            }
+            
+            .emphasis {font-variant-caps: all-petite-caps}
+        </style>
+               
+        
+<script>
+        $(document).ready(function() {
+    $('h3').addClass('emphasis');
+    });
+        
+        
+        
+        </script>
+    </head>
+    
+<body>
+    <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="webDevUser20.html">About Me</a></li>
+  <li><a href="webDevUser20_list.html">List</a></li>
+  <li><a href="webDevUser20_music.html">My Music</a></li>
+  <li><a class="active"href="webDevUser20_FAQ.html">FAQ</a></li>
+  <li><a href="webDevUser20_games.html">Games</a></li>
+  <li><a href="mailto:sample@gmail.com?Subject=Hello">Contact</a></li>
+</ul>
+ 
+<dl>
+	<dt>What is your first name?</dt>
+	<dd>Aryan.</dd>
+	<dt>What is your last name?</dt>
+	<dd>Padmanabhan.</dd>
+	<dt>What is your favorite color?</dt>
+	<dd>Black.</dd>
+	<dt>What is your favorite subject?</dt>
+	<dd>Web Development.</dd>
+	<dt>How old are you??</dt>
+	<dd>15.</dd>
+</dl>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<button data-file="day">Day</button>
+    <button data-file="night">Night</button>
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+
+    
+    
+    (function(){
+       var link = $('link');
+       $('button').click(function() {
+           var $this = $(this);
+      var stylesheet = $this.data('file');
+           $(this).siblings('button').removeAttr('disabled');
+           console.log(stylesheet);
+           $('link').attr('href', stylesheet +'.css');
+           $this.attr('disabled', 'disabled');
+           
+    
+     
+           
+           
+           
+           
+           
+           
+       });
+   })();
+
+</script>
+  
+   
+    
+    
+    
+    
+    
+    </body>
+</html> 

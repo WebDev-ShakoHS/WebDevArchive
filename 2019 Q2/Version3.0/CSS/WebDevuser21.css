@@ -1,0 +1,50 @@
+body {
+	<td style=color:#00FF00; background-color:darkblue;>
+    font-family: "Marker Felt", "Comic Sans MS", fantasy;
+	color: #003366;
+    background-image: url("..//images/WebDevUser21.jpg")
+}
+
+h1 {
+	font-size: 1.3em;
+	text-align: center;
+}
+
+h2{
+        font-size: 1.1em;
+        text-align: center;
+        color: aqua
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	border-collapse: collapse;
+    cellspacing: 0px;
+    <td style="color:#00FF00; background-color:sienna;">
+    
+}
+
+tr {
+	border: 1px solid #ffffff;
+	text-align: center;
+	background-color:#9FB6CD; 
+}
+
+img{
+  .center  
+  margin: auto;
+  width: 15%;
+  border: 3px solid green;
+  padding: 10px;
+    <td style=color:#00FF00; background-color:darkblue;>
+};
+ 
+th {
+	text-align: center;
+	color: #ffffff;
+	background-color: #003366 
+        
+    
+    }

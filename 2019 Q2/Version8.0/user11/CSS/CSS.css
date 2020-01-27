@@ -1,0 +1,40 @@
+
+dd{
+margin: auto;
+text-align: center;
+padding: 1em 0;
+
+}
+
+dt{
+width: 500px;
+margin: auto;
+text-align: center;
+cursor: pointer;  
+font-weight: bold;    
+font-size : 1.5em;    
+line-height: 2em;    
+background: linear-gradient(black, white);   
+border-bottom: 1px solid white;    
+border-top: 1px solid black;}
+
+dt:first-child { border-top: none; }
+
+dt:nth-last-child(2) { border-bottom: none; }
+.hide { display: none;}
+
+.lightb{
+    background-color: lightblue;
+}
+
+.darkb{
+    background-color: darkblue;
+}
+
+.tw{
+    color: white
+}
+
+.rightside{
+    position: relative
+}

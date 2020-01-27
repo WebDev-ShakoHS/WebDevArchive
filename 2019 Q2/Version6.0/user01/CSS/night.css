@@ -1,0 +1,7 @@
+body{
+    background: #ffffff url("../Night.jpg") no-repeat;
+    background-size: contain;
+    width: 160px;
+    height: 160px;
+    color: dimgrey;
+}

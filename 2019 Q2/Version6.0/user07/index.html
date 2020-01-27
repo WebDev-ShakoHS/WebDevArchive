@@ -1,0 +1,162 @@
+<html>
+    
+    
+    <head>
+        <title>Mason's Intro to jQuery</title>
+        <script src="JS/jquery-3.4.1.min.js"></script>
+        <link rel='stylesheet' href='CSS/lightmode.css'>
+        <style>
+            .emphasis {font-weight: bold;
+                font-size: 25;
+            }
+            
+            ul li {
+                color: red;  
+            }
+            h1 {
+                color:aquamarine;   
+            }
+        </style>
+        
+        <script>
+            
+            $(document).ready(function() {
+                $('li:first-child').addClass('emphasis');
+            });
+            
+        </script>
+        
+    </head>
+    <body>
+        
+    
+        <button data-file="lightmode">Light Mode</button>
+        <button data-file="darkmode">Dark Mode</button>
+        
+        
+        <script>
+        
+            (function() {
+                $('button').click(function() {
+                    
+                });
+            })();
+        
+        </script>
+        
+        <h1>Welcome</h1>
+        <ul>
+            <li>Not Hello</li>
+            <li>Also Not Hello</li>
+            <li>Also Also Not Hello</li>
+            <li>Also Also Also Not Hello</li>
+        </ul>
+        
+        <script>
+            var lis = $('ul li');
+            
+        </script>
+        
+        
+        
+        <dl>
+            <dt>What are you hours?</dt>
+            <dd>We are open 24/7.</dd>
+            <dt>What are you hours?</dt>
+            <dd>We are open 24/7.</dd>
+            <dt>What are you hours?</dt>
+            <dd>We are open 24/7.</dd>
+            <dt>What are you hours?</dt>
+            <dd>We are open 24/7.</dd>
+            <dt>What are you hours?</dt>
+            <dd>We are open 24/7.</dd>
+        </dl>
+        
+        
+        <style>
+            
+            body {
+                
+            }
+            
+            dl {
+                width: 500px;
+                
+                margin: auto;
+                text-align: center;
+            }
+            
+            dd {
+                margin: 0;
+                
+                padding: 1em 0;
+            }
+            
+            dt {
+              cursor: pointer;
+                
+                
+                font-weight: bold;
+                font-size: 1.5em;
+                line-height: 2em;
+                background: #e3e3e3;
+                border-bottom: 1px solid #c5c5c5;
+                border-top: 1px solid white;
+            }
+            
+            dt:first-child { border-top: none; }
+            dt:nth-last-child(2) { border-bottom: none; }
+        
+            .hide { display: none;}
+        </style>
+        
+        <script>
+            
+            (function() {
+                
+                $('dd').filter(':nth-child(n+4)').addClass('hide');
+                
+                $('dt').on('mouseenter', function() {
+                    $(this)
+                        .next()
+                            .slideDown(200)
+                            .siblings('dd')
+                                .slideUp(200);
+    
+                })
+                
+                
+              
+                
+                
+            })();
+            
+            
+            
+        </script>
+        
+        
+            <h2>Knock Knock</h2>
+            <h3>Whos There</h3>
+            <h3>I'm Not Really Sure</h3>
+        
+        <style>
+            $('h3').addClass('hide');
+            $('h2').on('mouseclick', function() {
+                $(this)
+                
+            })
+        
+        
+        </style>
+        
+        
+        
+        
+        
+        
+        
+    </body>
+    
+    
+</html>

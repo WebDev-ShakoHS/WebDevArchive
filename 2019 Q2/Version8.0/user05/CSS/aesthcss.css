@@ -1,0 +1,51 @@
+body {
+    /*background-color: #121212; The page background will be black */
+	font-family: "Courier New", Courier, monospace;
+	color: #11c9d1;
+    background-image: url("../aesth.jpg");
+
+}
+
+h1 {
+	
+	text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    color: #0fa4ab;
+}
+
+h3{
+        
+        text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    color: #10bcc4;
+}
+
+p{
+    font-size: 1.3em;
+    text-align: center;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	border-collapse: collapse;
+	cellspacing: 0px;
+}
+
+tr {
+	border: 1px solid #000000;
+	text-align: center;
+	background-color:#a780d9; 
+}
+
+th {
+	text-align: center;
+	color: #ffffff;
+	background-color: #451c78;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}

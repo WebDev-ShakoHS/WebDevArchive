@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!--Version 2.0
+
+        Name:
+
+        Date Completed:
+
+ -->
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Test One Page Web Web ">
+
+    <!-- code obtained from https://frimmy.github.io/api-test/  -->
+
+    <title>Games</title>
+
+
+        <style>
+         body {
+            margin: 0;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        } 
+ 
+        </style>
+
+  </head>
+
+
+  <body>
+      
+    <ul>
+        
+        <li><a href="index.html">Home</a></li>
+        
+        <li><a href="webDevUser30.html">About Me</a></li>
+        
+        <li><a href="webDevUser30_list.html">List</a></li>
+        
+        <li><a href="webDevUser30_music.html">My Favorite Games</a></li>
+        
+        <li><a href="webDevUser30_accordion.html">Accordion</a></li>
+        
+        <li><a href="webDevUser30_games.html">Play Games</a></li>
+        
+    </ul>
+      
+    <script language="JavaScript">
+
+var startTime=new Date();
+var endTime=new Date();
+var startPressed=false;
+var bgChangeStarted=false;
+var maxWait=20;
+var timerID;
+
+function startTest()
+{
+ document.body.style.background=document.response.bgColorChange.options[document.response.bgColorChange.selectedIndex].text;
+ bgChangeStarted=true;
+ startTime=new Date();
+}
+
+function remark(responseTime)
+{
+ var responseString="";
+ if (responseTime < 0.20)
+ responseString="Well done!";
+ if (responseTime >= 0.20 && responseTime < 0.30)
+ responseString="Nice!";
+ if (responseTime >=0.40 && responseTime < 0.50)
+ responseString="Could be better...";
+ if (responseTime >=0.50 && responseTime < 0.80)
+ responseString="Keep practising!";
+ if (responseTime >=0.80 && responseTime < 1.1)
+ responseString="Have you been day dreaming again?";
+ if (responseTime >=1.1)
+ responseString="Did you fall asleep?";
+ return responseString;
+}
+
+function stopTest()
+{
+ if(bgChangeStarted)
+ {
+ endTime=new Date();
+ var responseTime=(endTime.getTime()-startTime.getTime())/1000;
+
+ document.body.style.background="white"; 
+ alert("Your response time is: " + responseTime + " seconds " + "\n" + remark(responseTime));
+ startPressed=false;
+ bgChangeStarted=false;
+ }
+ else
+ {
+ if (!startPressed)
+ {
+ alert("press start first to start test");
+ }
+ else
+ { 
+ clearTimeout(timerID);
+ startPressed=false; 
+ alert("cheater! you pressed too early!");
+ } 
+ }
+}
+
+var randMULTIPLIER=0x015a4e35;
+var randINCREMENT=1;
+var today=new Date();
+var randSeed=today.getSeconds();
+
+function randNumber()
+{
+ randSeed = (randMULTIPLIER * randSeed + randINCREMENT) % (1 << 31);
+ return((randSeed >> 15) & 0x7fff) / 32767;
+}
+
+function startit()
+{
+ if(startPressed)
+ {
+ alert("Already started. Press stop to stop");
+ return;
+ }
+ else
+ {
+ startPressed=true; 
+ timerID=setTimeout('startTest()', 6000*randNumber());
+ }
+}
+
+</script>
+<p>Test your Response time!</p>
+Click on "Start" first, and wait until the background color changes. As soon as it changes, hit "stop!"
+
+<form name="response">
+Change background color in: 
+<select name="bgColorChange">
+<option selected>deeppink
+<option>aliceblue
+<option>crimson
+<option>darkkhaki
+<option>cadetblue
+<option>darkorchid
+<option>coral
+</select>
+<input type="button" value="start" onClick="startit()">
+<input type="button" value="stop" onClick="stopTest()">
+</form>
+      
+<table border="0" width="350" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img border="0" src="images/roulette.jpg" width="152" height="216"></td>
+    <td>
+
+<form name="fire">
+Load number of bullets (1-6):<br /><input name="bullets" type="text" size=3 value=1><br />
+
+<p>
+<input name="message" type="button" value="Play Roulette!" onClick="fireit()">
+</p>
+
+</form>
+
+<script>
+
+//Russian Roulette Game- by javascriptkit.com
+//Visit JavaScript Kit (http://javascriptkit.com) for script
+//Credit must stay intact for use
+
+function fireit(){
+var theone=Math.floor(Math.random()*6)
+
+if (theone<=document.fire.bullets.value-1)
+alert("Bang. You\'re dead!")
+else{
+document.fire.message.value="Whew. Got lucky!"
+setTimeout("document.fire.message.value='Play Roulette'",500)
+}
+}
+
+</script>
+
+<p align="center">This free script provided by<br />
+<a href="http://javascriptkit.com">JavaScript
+Kit</a></p>
+
+</td>
+  </tr>
+</table>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Mainhardt Intro to jQuery</title>
+        <script src="JS/jquery-3.4.1.js"></script>
+        <link rel='stylesheet'
+              href="CSS/day.css">
+        <style>
+            ol li{
+                color: red;
+            }
+            
+            .emphasis{
+                font-variant: small-caps;
+                font-size: 40px;
+            }
+            .packers{
+                color: green;
+            }
+            .vikings{
+                color: purple;
+            }
+            .bears{
+                color: navy;
+            }
+            .lions{
+                
+            }
+        </style>
+        <script>
+            
+            $(document).ready(function() {
+                $('li:first-child').addClass('emphasis');
+            });
+            
+        </script>    
+    </head>
+    <h1> NFC North Standings</h1>
+    <body>
+        <ol><li>Packers</li><li>Vikings</li><li>bears</li><li>lions</li></ol>
+        <button data-file="day">Day</button>
+        <button data-file="night">Night</button>
+        <script>
+        $('ol li').addClass('packers');
+        $('h1').addClass('bears');
+        
+        </script>
+    </body>
+    
+</html>

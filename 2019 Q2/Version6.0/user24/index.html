@@ -1,0 +1,68 @@
+<html>
+    
+    <head>
+        
+        <title>Dane Intro to jQuery</title>
+        
+        <script src="JS/jquery-3.4.1.js"></script>
+        
+        <link rel='stylesheet'
+              href="good.css">
+        
+        <style>
+            
+            ul li{
+                font-size: 24px;
+            }
+            .Barbarian{
+                color:darkorange;
+                font-family:'comic sans ms'
+            }
+            .Monk{
+                color:deepskyblue;
+            }
+            .Paladin{
+                color:gold;
+            }
+            .Warlock{
+                color:darkmagenta;
+            }
+            
+        </style>
+        
+        <script>
+             
+        $(function(){
+                $('li:first-child').addClass('Barbarian');
+            });
+             $(document).ready(function(){
+                 $('li:first-child').addClass('Barbarian');
+             });
+            
+         </script>
+        
+    </head>
+    
+    <h1>Favorite Dungeons and Dragons (5e) Classes</h1>
+    
+     <body>
+         
+         <ul><li>Barbarian</li><li class="Monk">Monk</li><li class="Paladin">Paladin</li><li class="Warlock">Warlock</li></ul>
+         
+         <button data-file="good">Good</button>
+         
+         <button data-file="evil">Evil</button>
+         
+         <script>
+         (function() {
+                $('button').click(function() {
+                    var stylesheet = $(this).text().toLowerCase();
+                    console.log(stylesheet);
+                    $('link').attr('href', stylesheet + '.css');
+                });
+            })();
+         </script>
+         
+    </body>
+    
+</html>

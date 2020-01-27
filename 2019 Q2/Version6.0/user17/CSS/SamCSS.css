@@ -1,0 +1,16 @@
+
+dt{
+cursor: pointer;    	    
+font-weight: bold;    
+font-size : 1.5em;    
+line-height: 2em; 
+background: #ff00ff;    
+border-bottom: 1px solid #c5c5c5;    
+border-top: 1px solid white;
+font-family: fantasy}
+
+
+dt:first-child { border-top: none; }
+
+dt:nth-last-child(2) { border-bottom: none; }
+.hide { display: none;}

@@ -1,0 +1,91 @@
+
+img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+th {
+	text-align: center;
+	color: #ffffff;
+	background-color: #003366;
+}
+body {
+	font-family: "Marker Felt", "Comic Sans MS", fantasy;
+	color: #003366;
+    /*background-image: url("../images/webDevUser00.png");*/
+    height: 100%
+          background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+	font-size: 1.3em;
+	text-align: center;
+}
+
+h2{
+        font-size: 1.1em;
+    text-align: center;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	border-collapse: collapse;
+	cellspacing: 0px;
+}
+
+tr {
+	border: 1px solid #ffffff;
+	text-align: center;
+	background-color:#9FB6CD; 
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {border-radius: 8px;}
+
+.button2 {border-radius: 50%;}
+
+.blue {background-color: #0000ff;}
+
+.red {background-color: #ff0000;}
+
+#content{
+    text-align: right;
+    color: magenta;
+    background-color: #47abd5;
+}
+
+#morecontent {
+  background-color: yellow;
+}
+/*
+p.center {
+  text-align: center;
+  color: red;
+}
+
+p.large {
+  font-size: 300%;
+}
+
+.large {
+    font-size: 400%;
+}
+/*

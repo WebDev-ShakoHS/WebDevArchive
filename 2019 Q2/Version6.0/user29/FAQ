@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>jQuery Events 201</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<dl>
+	<dt>What are your hours?</dt>
+	<dd>We are open 24/7.</dd>
+	<dt>What are your hours?</dt>
+	<dd>We are open 24/7.</dd>
+	<dt>What are your hours?</dt>
+	<dd>We are open 24/7.</dd>
+	<dt>What are your hours?</dt>
+	<dd>We are open 24/7.</dd>
+	<dt>What are your hours?</dt>
+	<dd>We are open 24/7.</dd>
+</dl>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+
+
+</script>
+
+</body>
+</html>
+body{
+width: 500px;
+	
+    margin: auto;
+    text-align: center;
+}
+
+dl{
+
+}
+
+dd{
+margin: 0;	    
+padding: 1em 0;
+}
+
+dt{
+cursor: pointer;    	    
+font-weight: bold;    
+font-size : 1.5em;    
+line-height: 2em;    
+background: #e3e3e3;    
+border-bottom: 1px solid #c5c5c5;    
+border-top: 1px solid white;}
+
+dt:first-child { border-top: none; }
+
+dt:nth-last-child(2) { border-bottom: none; }
+.hide { display: none;}s

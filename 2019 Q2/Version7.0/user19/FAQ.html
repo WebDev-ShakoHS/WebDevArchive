@@ -1,0 +1,120 @@
+<head>
+
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Test One Page Web Web ">
+
+    <!-- code obtained from https://frimmy.github.io/api-test/  -->
+
+    <title>Apps</title>
+
+
+    <!-- CSS -->
+
+    <link href="CSS/bootstrapEdit.css" rel="stylesheet">
+      
+    <link href="CSS/FAQ.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+
+    <link rel="stylesheet" type="text/css"
+
+          href="https://fonts.googleapis.com/css?family=Lobster">
+
+
+
+  </head>
+
+
+  <body>
+
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+      <div class="container">
+
+        <div class="navbar-header">
+
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+
+            <span class="sr-only">Toggle navigation</span>
+
+            <span class="icon-bar"></span>
+
+            <span class="icon-bar"></span>
+
+            <span class="icon-bar"></span>
+
+          </button>
+
+         
+
+        </div>
+
+        <div class="collapse navbar-collapse">
+
+           <ul class="nav navbar-nav">
+                <li><a href="index.html">Index</a></li>
+               <li class="active"><a href="FAQ.html">Apps</a></li>
+               
+            <li ><a href="index.html">Home</a></li>
+               
+               <li><a href="favthings.html">Favorite Things vs Not Favorite Things</a></li>
+               
+            <li><a href="FavoriteGames.html">Favorite Games</a></li>
+               
+                <li><a href="JavascriptGame.html">Snake </a></li>
+               <li><a href="FAQ.html">Refresh</a></li>
+
+            <li><a href="mailto:aidanmusil@gmail.com?Subject=Hello">Contact</a></li>
+
+          </ul>
+
+        </div><!--/.nav-collapse -->
+
+      </div>
+
+    </div>
+      <br>
+      <br> 
+      
+      <h3>App Page</h3>
+<dl>
+    <dt>Clone App</dt>
+    <dd><a href="CloneApp.html">Click Here</a></dd>
+    <dt>Cool Email</dt>
+    <dd><a href="CoolEmail.html">Click Here</a></dd>
+    <dt>Animation App</dt>
+    <dd><a href="AnimationApp.html">Click Here</a></dd>
+    <dt>App4</dt>
+    <dd><a></a>Link4</dd>
+</dl>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+
+
+</script>
+<h4 class="h4">Alt Links:</h4>
+      <a href="CloneApp.html">Clone App |</a>
+      <a href="CoolEmail.html">Cool Email |</a>
+      <a href="AnimationApp.html">Animation App</a>
+</body>
+</html>

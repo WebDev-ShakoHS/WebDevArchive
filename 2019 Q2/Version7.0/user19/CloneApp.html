@@ -1,0 +1,79 @@
+<html>
+<head>
+    <link href="CSS/bootstrapEdit.css" rel="stylesheet">
+      
+    <link href="CSS/HomePage.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+
+    <link rel="stylesheet" type="text/css"
+
+          href="https://fonts.googleapis.com/css?family=Lobster">
+
+
+ <title>Clone App</title>
+  </head>
+
+
+  <body>
+
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+      <div class="container">
+
+        <div class="navbar-header">
+
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+
+            <span class="sr-only">Toggle navigation</span>
+
+            <span class="icon-bar"></span>
+
+            <span class="icon-bar"></span>
+
+            <span class="icon-bar"></span>
+
+          </button>
+
+         
+
+        </div>
+
+        <div class="collapse navbar-collapse">
+
+           <ul class="nav navbar-nav">
+                <li><a href="FAQ.html">Back</a></li>
+               
+               <li><a href="CloneApp.html">Refresh</a></li>
+              
+          </ul>
+
+        </div><!--/.nav-collapse -->
+
+      </div>
+
+    </div>
+   
+    
+
+<body>
+<div class="container">
+    <h2>Clone Me!</h2>
+</div>
+    
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    
+<script>
+    
+(function() {
+    $('h2').live('click' function() {          console.log('clicked');
+        $(this).clone(true).appendTo('body');
+    });
+})();
+    
+</script>
+    
+</body>  
+</html>

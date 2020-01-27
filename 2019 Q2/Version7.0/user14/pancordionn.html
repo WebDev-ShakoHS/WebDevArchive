@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+    
+    
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+    
+	<meta charset=utf-8>
+	<title>Pancake website FAQ</title>
+    <link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="CSS/14style.css">
+</head>
+<body>
+      
+<dl>
+	<dt>what brought you to create this website?</dt>
+	<dd>i felt the need to express my passion for pancakes.</dd>
+	<dt>why is banana at the top of the top 5 list?</dt>
+	<dd>because it is my personal favorite flavor.</dd>
+	<dt>Why did you give an entire description on pancakes?</dt>
+	<dd>Pancakes have feelings too and need to be acknowledged.</dd>
+	<dt>How did you code this amazing website?</dt>
+	<dd>I used a combonation of html,css,and jQuery to create.</dd>
+	<dt>when did you eat your first pancake?</dt>
+	<dd>that information is very much classified and cannot be shared :) .</dd>
+</dl>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+
+
+</script>
+
+</body>
+</html>

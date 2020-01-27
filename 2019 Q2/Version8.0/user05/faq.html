@@ -1,0 +1,60 @@
+<html>
+    
+<head>
+	<meta charset=utf-8>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Test One Page Web Web ">
+	<title>VSCO FAQ</title>
+	<link rel="stylesheet" href="CSS/faqstyle.css">
+    <link rel="stylesheet" type="text/css"
+
+          href="https://fonts.googleapis.com/css?family=Lobster">
+
+    <link href="CSS/faqcss.css" rel="stylesheet">
+</head>
+<body>
+    
+   <div id="content">
+       
+    <br>
+
+    <br>
+       
+       <h1>VSCO Frequently Asked Questions</h1>
+       <dl>
+	       <dt>What is a VSCO girl?</dt>
+	       <dd>VSCO girl is a subculture popularized by younger highschool girls and is a modern teen icon of sorts.</dd>
+	       <dt>Where do you find them?</dt>
+	       <dd>Usually they are within a highschool or on social media such as Instagram or TikTok.</dd>
+	       <dt>What are the requirements?</dt>
+	       <dd>They are usually accepting, althought it is recommended to know the slag they use and what ideas they support. See Organisations page for more details.</dd>
+	       <dt>What does the aesthetic look like?</dt>
+	       <dd>Check the aesthetics page from this website.</dd>
+	       <dt>How do I become a VSCO girl?</dt>
+	       <dd>You can follow the aesthetic with fashion and support similar organisations. I recommend extra research before deciding if VSCO is for your or not.</dd>
+       </dl>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+</script>
+    <div id="footer">
+        <p>To return, hit the back button</p>
+    </div>  
+</body>
+</html>

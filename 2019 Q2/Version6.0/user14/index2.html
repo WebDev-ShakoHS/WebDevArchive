@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>Operator FAQ</title>
+	<link rel="stylesheet" href="CSS/14style.css">
+</head>
+<body>
+
+<dl>
+	<dt>why is caveira garbage?</dt>
+	<dd>she is annoying, therefore, she is trash.</dd>
+	<dt>why is blitz garbage?</dt>
+	<dd>he is annoying, therefore, he is trash.</dd>
+	<dt>Why is Jackal garbage?</dt>
+	<dd>he is annoying, therefore, he is trash.</dd>
+	<dt>Why is Montagne garbage?</dt>
+	<dd>he is annoying, therefore, he is trash.</dd>
+	<dt>Why is Clash garbage?</dt>
+	<dd>she is annoying, therefore, she is trash.</dd>
+</dl>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+
+
+</script>
+
+</body>
+</html>

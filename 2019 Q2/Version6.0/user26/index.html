@@ -1,0 +1,66 @@
+<html>  
+    <head>
+        <title>This Is Hard</title>
+        <script src="Js/jquery-3.4.1.js"></script>
+        <link rel="stylesheet" href="Day.css"> 
+        <style>
+            ul li{
+                color: red;
+            }
+            green{
+                color: green;
+            }
+            purple{
+                color: purple;
+            }
+            navy{
+                color: navy;
+            }
+            h1{
+                color: blue;
+            }
+            yellow{
+                color: yellow;
+            }
+            .emphasis{ 
+                font-weight: bold;
+            }
+            .emphasis{ 
+                font-size: 20;
+            }
+        </style>
+        <script>
+            $(function() {
+                $('li:first-child').addClass('emphasis');
+            });
+            $(document).ready(function() {
+                $('li:first-child').addClass('emphasis');
+            });
+            $ ('ul li').addClass('ul li');
+            $ ('h1').addClass('h1');
+        </script>
+    </head>
+    <body>
+          <h1>6.0 Things</h1>
+        <ul><li>This</li><li>Stuff</li><li>Is</li><li>Hard</li></ul>
+        <button data-file="day">Day</button>
+        <button data-file="night">Night</button>
+        <script>
+(function() {
+      var link = $('link');
+    $('button').on('click', function() {
+        var $this = $(this),
+            stylesheet = $this.data('file');
+        
+        link.attr('href', stylesheet + '.css');
+        
+        $this
+            .siblings('button')
+            .removeAttr('disabled')
+            .end()
+            .attr('disabled', 'disabled');
+    });
+})();
+        </script>  
+    </body>
+</html>

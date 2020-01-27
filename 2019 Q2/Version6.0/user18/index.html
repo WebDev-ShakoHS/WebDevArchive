@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>User18 Intro to jQuery</title>
+        <script src ="JS/jquery-3.4.1.js"></script>
+        <link rel='stylesheet'
+              href="CSS/day.css">
+    <style>
+        ol li{
+            color: red;
+        }
+         .emphasis{
+            font: bold;
+        }
+        .anger{
+            color: red;
+        }
+        .joy{
+            color: yellow;
+        }
+        .sadness{
+            color: blue;
+        }
+        .disgust{
+            color: green;
+        }
+        .fear{
+            color: purple;
+        }
+        </style>
+    
+        <script>
+            jQuery(document).ready(function(){
+                jQuery('li:first-child').addClass('emphasis');
+            });
+                  
+        </script>
+
+    </head>
+    <h1>Inside Out Emotions</h1>
+    <body>
+        <ol><li>Anger</li>
+            <li>Joy</li>
+            <li>Sadness</li>
+            <li>Disgust</li>
+            <li>Fear</li>
+        </ol>
+        <button data-file="day">Day</button>
+        <button data-file="night">Night</button>
+        
+
+        <script>
+        jQuery('ol li').addClass('fear');
+        jQuery('h1').addClass('sadness');
+        </script>
+    </body>
+</html> 

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Test One Page Web Web ">
+
+    <link rel="shortcut icon" href="favicon.ico"/>
+    
+    
+    <!-- Bootstrap core CSS -->
+
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+
+ 
+
+    <!-- Custom styles for this template -->
+
+    <link href="CSS/pankuku.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Best pancake places</title>
+    
+    <script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown(5000);
+  });
+  $("#stop").click(function(){
+    $("#panel").stop();
+  });
+});
+</script>
+<style> 
+#panel, #flip {
+  padding: 5px;
+  font-size: 18px;
+  text-align: center;
+  background-color: #555;
+  color: white;
+  border: solid 1px #666;
+  border-radius: 3px;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
+    
+    
+    
+    
+    
+    
+    
+    </head>
+    <body>
+    
+    
+    
+    
+      
+
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+      <div class="container">
+
+        <div class="navbar-header">
+
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+
+            <span class="sr-only">Toggle navigation</span>
+
+            <span class="icon-bar"></span>
+
+            <span class="icon-bar"></span>
+
+            <span class="icon-bar"></span>
+
+          </button>
+
+    
+
+        </div>
+
+        <div class="collapse navbar-collapse">
+
+           <ul class="nav navbar-nav">
+
+            <li><a href="index.html">Pancake Description</a></li>
+               
+            <li><a href="pancordionn.html">Pancake FAQ</a></li>
+               
+            <li><a href="pankulist.html">Bad Pancakes</a></li>
+
+            <li class="active"><a href="ihop.html">Best Pancake Place</a></li>
+
+            <li><a href="aboutme.html">About Developer</a></li>
+               
+            <li><a href="list.html">Best Pancakes</a></li>
+            
+             
+
+          </ul>
+
+        </div><!--/.nav-collapse -->
+
+      </div>
+
+    </div>
+        
+    <h3>secret pancake place</h3>
+    <button id="stop">Stop sliding</button>
+
+<div id="flip">Click to find the best place</div>
+        <div id="panel">IHOP is the best!<a href="https://www.ihop.com/en" target="_blank">Website</a></div>
+    
+
+    </body>

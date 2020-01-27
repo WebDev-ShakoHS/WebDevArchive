@@ -1,0 +1,54 @@
+<html>
+<head>
+    <title> Vin Intro to Jquery</title>
+    <h1>NFC North standings</h1>
+    <button data-file="day">Day</button>
+    <button data-file="Night">Night</button>
+    <script src="JS/jquery-3.4.1.js"> </script>
+    <link rel= 'stylesheet'
+          href= "CSS/day.css">
+    <style>
+        .emphasis { font-weight: bold}
+         ul li {
+            color:blueviolet;
+        }
+    </style>    
+    
+    <script>
+    (function(){
+        var link = $('link');
+        $('button').on('click', function() {
+            var $this = $(this),
+                stlesheet = $this.data('file');
+            
+            link.attr('href', stylesheet + '.css');
+            
+            $this
+                 .siblings('button')
+                     .removeAttr('disabled')
+                     .end()
+                    .attr('disabled', 'disabled');
+               });
+    })();
+
+    </script>
+    
+    
+    </head>
+  
+    
+    <script>
+    $(document).ready(function() {
+    $('li:secound-child').addclass(emphasis);
+    })
+    </script>
+<body>
+    <ul><li>Packers</li><li>Vikings</li>
+        <li>Bears</li><li>Lions</li></ul>
+   
+    <script>
+          $('ol li').addClass('packers')
+         $('h1').addClass('bears')
+     </script>
+    </body>
+</html>

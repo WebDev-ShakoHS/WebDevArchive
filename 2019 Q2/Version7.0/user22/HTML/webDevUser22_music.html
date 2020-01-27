@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Lost in the Sauce</title>
+<div id="Script and stlye">
+	<link href="../CSS/day.css" rel="stylesheet" type="text/css">
+	<script src="../JS/jquery-3.4.1.js"></script>
+    <title></title>
+	</div>
+
+
+<link rel='icon' href='favicon_io/favicon22.ico' type='image/x-icon'/ >
+
+</head>
+
+<body>
+  <div class="topnav">
+	<a href="../index.html">Home</a>
+	<a class="active" href="webDevUser22_music.html">Food</a>
+	<a href="WebDevUser22_Games.html">Bad Games</a>
+	<a href="WebDevUser22_lists.html">IDK</a>
+	<a href="FAQ.html">FAQ</a>
+	<div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Settings
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+	<div id="stylebutton" display="block">
+		<button data-file="day" class="button" id="light">Light Mode</button>
+		<button data-file="night" class="button">Objectivly Better Mode</button>
+	</div>
+  </div>	
+  </div> 
+</div>
+  <script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+<script>
+	var link = $('link');
+	$('#stylebutton .button').on('click', function() {	
+			var $this = $(this);
+			var stylesheet = $(this).data('file');
+			link.attr('href', '../' + 'CSS/' + stylesheet + '.css');
+			$this
+			.siblings('button')
+				.removeAttr('disabled')
+				.end()
+				.attr('disabled', 'disabled')
+	});
+
+	$('#fontchange #initial').on('click', function() {
+		var button1 = document.getElementById("positive");
+		var button2 = document.getElementById("negative");
+		(button1).style.visibility = 'visible';
+		(button2).style.visibility = 'visible';
+	});
+	$('#fontchange #positive').on('click', function() {
+		var fontSize = parseInt($("body").css("font-size"));
+		fontSize = fontSize + 3 + "px";
+		$("body").css({'font-size':fontSize});
+	});
+	$('#fontchange #negative').on('click', function() {
+		var fontSize = parseInt($("body").css("font-size"));
+		fontSize = fontSize - 3 + "px";
+		$("body").css({'font-size':fontSize});
+	});
+	$('#challengebutton #revealer').on('click', function() {
+		var revealer = document.getElementById("revealer");
+		revealer.innerHTML="Are you really?"
+		var button1 = document.getElementById("revealed1");
+		(button1).style.visibility = 'visible';
+		var button2 = document.getElementById("revealed2");
+		(button2).style.visibility = 'visible';
+});
+	$('#challengebutton #revealed1').on('click', function() {
+		var x = document.getElementById("textbubble");
+		x.style.visibility = 'visible';
+	});
+	$('#challengebutton #revealed2').on('click', function() {
+		var revealer = document.getElementById("revealer");
+		revealer.innerHTML="You up for a challenge?"
+		var button1 = document.getElementById("revealed1");
+		(button1).style.visibility = 'hidden';
+		var button2 = document.getElementById("revealed2");
+		(button2).style.visibility = 'hidden';
+		var x = document.getElementById("textbubble");
+		x.style.visibility = 'hidden';
+	});
+</script>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>  
+    
+    
+    <h1>My Top 5 Olive Garden Dishes</h1>
+ <img src="../Images/WebDevUser22.jpeg" alt="The good stuff" width="default" height="default" id="bread" />
+ <table align="center">
+ <thead><tr><th>Rank</th><th>Meal</th></tr></thead>
+ <tr><b><td>1</td></b><td>Breadsticks</td></tr>
+ <tr><b><td>2</td></b><td>Salad</td></tr>
+ <tr><b><td>3</td></b><td>Alfredo</td></tr>
+ <tr><b><td>4</td></b><td>Lasagna</td></tr>
+ <tr><b><td>5</td></b><td>Applebees</td></tr>
+ </table>
+<div id="trubbish">
+	<img src="https://cdn.bulbagarden.net/upload/e/e2/568Trubbish.png">
+</div>
+
+<div id="footer">
+<p>
+Food can be found <a href="https://www.olivegarden.com/menu-listing/dinner (Links to an external site.)">here</a>
+</p>
+</div>
+</body>
+</html>

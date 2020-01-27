@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!--Version 3.0
+
+        Name:Michael Peck 
+
+        Date Completed:12-11-19
+
+ -->
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Test One Page Web Web ">
+
+    <title>Micahel Peck Home</title>
+	<link rel="shortcut icon" herf="images/favicon.ico" type= "images/x-icon">
+	<link href="CSS/WebDevUser21.css" rel="stylesheet" type="text/css"> 
+	
+	<style>
+         .mydiv{ 
+            margin:10px;
+            padding:12px; 
+            border:2px solid #666; 
+            width:100px; 
+            height:100px;
+         }
+      </style>
+	
+
+  </head>
+
+
+  <body>
+ <!--Navigation bar-->
+<div id='#content'></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+   
+   $('#content').load("./nav.html");
+
+});
+</script>
+
+
+
+<div id="content"></div>
+<!--end of Navigation bar-->
+<div id="content">
+
+    <br />
+
+    <br />
+
+                        <h2>About Me</h2>
+
+
+                        <p>
+
+
+                                This is my first webpage! I was able to code all the HTML and CSS in order to make it. This is the only place on the internet where you can get this public information about me. 
+
+
+                        </p>
+
+
+                        <p>
+
+
+                                Please click the links in the menu if you'd like to find out my favorite things!
+
+
+                        </p>
+
+
+
+
+                </div>
+
+
+<h3>Below is an accordion (click for answers)</h3>
+
+<div class="accordion">
+	<div class="accordion-header">My Eye color</div>
+	<div class="accordion-content">Blue</div>
+
+	<div class="accordion-header">Do I have Glasses?</div>
+	<div class="accordion-content">Yes</div>
+
+	<div class="accordion-header">Can I play the accordion></div>
+	<div class="accordion-content">No.</div>
+</div>
+<br />
+<br />
+<br />
+<h3>The next jquery selector will color Starwars as Red</h3>
+  <ul>
+      <li data-movie="Starwars">Starwars</li>
+      <li data-movie="Halloween">Beijing</li>
+      <li data-movie="Alien">New York</li>
+   </ul>
+   <script>
+   $("li[data-movie='Starwars']").css("color", "Red");</script>
+   
+
+<br />
+<br />
+<br />
+      
+	   <div class = "mydiv">
+         Do you like Squares?
+      </div>
+		<script type = "text/javascript" language = "javascript">
+         $(document).ready(function() {
+
+            $("#show").click(function () {
+               $(".mydiv").show( 1000 );
+            });
+
+            $("#hide").click(function () {
+               $(".mydiv").hide( 1000 );
+            });
+				
+         });
+      </script>
+      <input id = "hide" type = "button" value = "No, get rid of it!" />   
+      <input id = "show" type = "button" value = "Yes, Keep it here!" />
+	  <br><br>
+	  <script>
+		$(document).ready(function(){
+		$("button").click(function(){
+		$("#div1").fadeIn();
+		$("#div2").fadeIn("slow");
+		$("#div3").fadeIn(3000);
+  });
+});
+</script>	
+	 <button>Summon more Squares!</button>
+
+<div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+<div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+<div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+ 
+ 
+
+
+<br />
+<br />
+<br />
+<h3>jquery image transitions</h3>
+<script type = "text/javascript" language = "javascript">
+$(".slider > div:gt(0)").hide();
+
+setInterval(function() {
+	$('.slider > div:first-child')
+		.fadeOut(10)
+		.next()
+		.fadeIn(10)
+		.end()
+		.appendTo('.slider');
+}, 300);
+</script>
+<div class="slider">
+	<div><img src="images/1.jpg"></div>
+	<div><img src="images/2.jpg"></div>
+	<div><img src="images/3.jpg"></div>
+</div>
+ <div id="footer">
+
+
+                        <p>
+
+
+                                Webpage made by Michael Peck
+
+
+                     </p>
+
+
+                </div>
+
+
+
+    <!-- Bootstrap core JavaScript
+
+    ================================================== -->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="scripts.js"></script>
+
+ 
+</body>
+
+</html>

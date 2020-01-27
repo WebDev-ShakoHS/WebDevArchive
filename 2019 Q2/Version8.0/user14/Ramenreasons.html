@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 3.0
+        Name:
+        Date Completed:
+ -->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="SHS WebDev Menu Sample">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+  <script> 
+$(document).ready(function(){
+  $(img).click(function(){
+    $(bruh).animate({right: '250px'});
+  });
+});
+        </script>
+<script>
+$(document).ready(function(){
+  $(imag).click(function(){
+    $(bruh).animate({left: '250px'});
+  });
+});
+</script> 
+        
+        <link rel="shortcut icon" href="CSS/favicon.ico"/>
+        <link href="CSS/favram.css" rel="stylesheet" type="text/css">
+        <title>Ramen Gallery</title>
+        
+        <!-- Bootstrap core JS -->
+        <!-- These are needed to get the responsive menu to work -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- Custom styles for this template -->
+        <style type="text/css">
+            .menu{
+                margin: 0px;
+                background-color: bisque;
+                color:darkgoldenrod;
+            }
+            
+            .wideMargin{
+                margin: 15px;
+            
+            }
+            #footer{
+                font-size: 12px;
+                text-align: center;
+                
+            }
+            body{
+                background-image: url(CSS/ramenblock.png);
+            }
+            ul{
+            color: crimson;
+            }
+            h2{
+                color:darkorange;
+            }
+            dd{
+                
+            color: black;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="menu" id="content">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <a href="Evanphp_Demo/index.php" class="navbar-brand">WebDev Ramen</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+<!---------------------------------- Edit These Items in your Menu ------------->                        
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="Ramennutri.html" class="nav-item nav-link">Ramen Nutrition</a>
+                        <a href="photogall.html" class="nav-item nav-link ">Gallery</a>
+                        <a href="personalram.html" class="nav-item nav-link">Ramen Rank</a>
+                        <a href="Ramenreasons.html" class="nav-item nav-link active">Reasons for ramen</a>
+                        <a href="nemar.html" class="nav-item nav-link ">Ramen Facts</a>
+<!----------------------------------^ Edit These Items in your Menu ^ ------------->                        
+                    </div>
+                    <div class="navbar-nav ml-auto">
+                        <a href="movies.html" class="nav-item nav-link ">Movies w/ ramen</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <h1>Reasons to love Ramen</h1>
+        <dl>
+	<dt>reason 1</dt>
+	<dd>it is inexpensive </dd>
+	<dt>reason 2</dt>
+	<dd>the flavors are really nice</dd>
+	<dt>reason 3</dt>
+	<dd>it provides some healthy qualities</dd>
+	<dt>reason 4</dt>
+	<dd>it can insipire you to make a website about ramen</dd>
+	<dt>reason 5</dt>
+	<dd>it originates in china</dd>
+</dl>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+
+
+</script>
+        
+<button id="img">make image move</button> <button id="imag">make image move back</button> <div id="bruh" style="background-image: url(CSS/ramenbruv.jpg);height:100px;width:100px;position:absolute;"></div>

@@ -1,0 +1,119 @@
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+
+
+body {
+	font-family: "Marker Felt", "Comic Sans MS", fantasy;
+	color: #00ff00;
+    background-image: url("../images/WebDevUser25BG.jpg");
+    background: url("../images/WebDevUser25BG.jpg");
+    background-repeat: no-repeat;
+    background-size: 1500px 800px;
+}
+
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.butto {
+  background-color: #00ffff; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {
+  border-radius: 8px;
+}
+
+.button2 {
+  border-radius: 30%;
+}
+
+.red { 
+   background-color: #ff0000;
+}
+
+.button3:hover {
+  background-color: #ff00ff;
+  color: teal;
+}
+
+.button4 {
+  background-color: white; 
+  color: brown; 
+  border: 2px solid #f44336;
+}
+
+.butto1:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  
+}
+
+.content {
+    color: magenta;
+    text-align: right;
+    
+}
+
+h1 {
+	font-size: 1.3em;
+	text-align: center;
+}
+
+#morecontent {
+  background-color: yellow;
+}
+
+h2{
+        font-size: 1.1em;
+        text-align: center;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	border-collapse: collapse;
+	cellspacing: 0px;
+}
+
+tr {
+	border: 1px solid #ffffff;
+	text-align: center;
+	background-color:#9FB6CD; 
+}
+
+th {
+	text-align: center;
+	color: #ffffff;
+	background-color: #003366;
+}
+
+p   {
+    font-size: 1.1em;
+    text-align: center;
+}

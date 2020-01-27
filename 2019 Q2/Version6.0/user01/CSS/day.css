@@ -1,0 +1,7 @@
+body{
+    background: #ffffff url("../Day.jpeg") no-repeat;
+    background-size: contain;
+    width: 160px;
+    height: 160px;
+    color: yellow;
+}

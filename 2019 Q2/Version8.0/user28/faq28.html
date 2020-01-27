@@ -1,0 +1,86 @@
+<html lang="en">
+<!--Version 7.0
+	Name:
+	Date Completed:
+ -->
+<head>
+<link rel="stylesheet" href="CSS/faq28.css">
+<title>Poptart Info</title>
+
+
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="music.html">Music</a></li>
+  <li><a href="Games28.html">Arcade</a></li>
+  <li><a href="Aboutme28.html">About Me</a></li>
+  <li><a href="faq28.html">Poptart History</a></li>
+  <li><a href="lists.html">Lists</a></li>
+    <li><a href="http://127.0.0.1:8080/user28/index.php">Merchandise</a></li>
+    <li><a href="http://127.0.0.1:8080/user28/weather/index.php">Weather</a></li>
+</ul>
+    <br>
+    <dl>
+        <dt>When was the first Pop-Tart released?</dt>
+        <dd>The first official Pop-Tarts were released in 1964, though, they were unfrosted. </dd>
+        <dt>What were the first flavors?</dt>
+        <dd>The first flavors were strawberry, blueberry, brown sugar cinnamon, and apple currant.</dd>
+        <dt>When were the first frosted poptarts introduced?</dt>
+        <dd>They were introduced in 1967.</dd>
+        <dt>Who founded the Poptart brand?</dt>
+        <dd>A man named Kellogg.</dd>
+        <dt>How did they pick the name Poptarts?</dt>
+        <dd>It was inspired by an artist named Andy Warhol. A pop-art artist.</dd>
+        </dl>
+    <script src="JS/jquery-3.4.1.js"></script>
+        
+        <script>
+            (function() {
+                
+                var dd = $('dd');
+                
+                $('dd').filter(':nth-child(n+4)').addClass('hide');
+                
+                $('dl').on('mouseenter', 'dt', function() {
+                    $(this)
+                        .next()
+                            .slideDown(200)
+                            .siblings('dd')
+                                .slideUp(200);
+                });
+            })();
+    </script>
+    
+    <style>
+    body {
+  background-image: url('images/loony.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+        }
+    </style>
+<div class="imagees">
+        <img src="images/strawberry.jpeg" alt="Frosted Strawberry Poptart">
+        <img src="images/unfrost.jpeg" alt="Unfrosted Strawberry Poptart">
+    </div>
+    <style type="text/css">
+        .imagees img {
+            position: absolute;
+            top: 470;
+            left: 585;
+            width: `10%;
+        }
+        .imagees img:last-child {
+            display: none;
+        }
+    </style>
+    
+    <script>
+$('.imagees').hover(function () {
+    $(this).find("img:last").fadeToggle();
+});
+    </script>
+</head>
+
+<body>
+    </body>
+</html>

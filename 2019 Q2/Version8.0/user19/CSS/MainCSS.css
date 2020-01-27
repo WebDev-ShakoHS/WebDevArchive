@@ -1,0 +1,163 @@
+body {background-color: #5f88d4;}
+
+/* Main Page CSS */
+
+.HomeTitle {color: whitesmoke;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 75px;
+            }
+.HomeText {color: whitesmoke;
+            margin-left: auto;
+            font-size: 15px;
+            text-indet: 50px;}
+.HomeSocialTitle {color: whitesmoke;
+                text-align: center;
+                font-family: sans-serif;
+                font-size: 50px;
+                }
+.HomeSocial {color: whitesmoke;
+            font-size: 15px;
+            }
+.HomeCreator {text-align: center;
+            color: whitesmoke;}
+/* Newest Games 2020 Page */
+
+td {background-color: lightblue;
+    font-family: fantasy;
+}
+
+tr {background-color: #406cff; 
+}
+
+.tablerow {background-color: #406cff
+}
+
+.center {margin-left: auto;
+        margin-right: auto;
+}
+
+.top5 {text-align: center;
+}
+.hack {font-size: 5px;
+        text-align: center;
+} 
+.Complete {font-size: 2px;}
+
+/* Best and Worst Games 2019 Page */
+
+.GamesWarning {color: orangered;
+                    text-align: center;
+                    font-size: 20px;
+                    text-decoration: underline, overline;}
+.GamesTitle {color: whitesmoke;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 50px;
+            }
+.Games {color: white;
+        font-size: 20px;}
+.GamesList {color: white;}
+
+.Top {text-align: center;
+        color: whitesmoke;
+        font-size: 10px;}
+
+/* Apps Page */
+.AppBody{
+width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+dl{
+
+}
+
+dd{
+margin: 0;	    
+padding: 1em 0;
+}
+
+dt{
+cursor: pointer;    	    
+font-weight: bold;    
+font-size : 1.5em;    
+line-height: 2em;    
+background: #e3e3e3;    
+border-bottom: 1px solid #c5c5c5;    
+border-top: 1px solid white;}
+
+dt:first-child { border-top: none; }
+
+dt:nth-last-child(2) { border-bottom: none; }
+.hide { display: none;}
+
+.AppTitle {font-size: 6em;
+    color: whitesmoke;}  
+
+.AltLinks {font-size: 2em;}  
+/* Java Games */
+
+.JavaGameButton { background-color: #4CAF50; 
+ border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;}
+.JavaTitle {
+            color: white;
+            font-family: monospace;
+            font-size: 40px;
+            text-decoration: underline;
+}
+/* Snake */
+.SnakeTitle {color: whitesmoke;
+            font-size: 30px;
+            }
+.SnakeText {color: whitesmoke;
+            font-size: 20px;
+            }
+/* Pac Man */
+.PacManError {color: red;
+            font-size: 30px;}
+ 
+/* Weather App */
+
+/* Add Games Page */
+
+.BackfromCustomList {text-align: center;
+                    background-color: aqua;}
+/* Try Me */
+/* Link */
+span {
+  min-width: 5px;
+  display: inline-block;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 0.85em;
+  letter-spacing: 1.5px;
+  color: #FFF;
+}
+
+.text {
+  overflow: hidden;
+  height: auto;
+}      
+/* Link Complete */
+.button1 {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+

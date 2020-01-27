@@ -1,0 +1,37 @@
+table {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	border-collapse: collapse;
+	cellspacing: 50px;
+    height: 50px;
+    
+}
+
+tr {
+	border: 1px solid #ffffff;
+	text-align: center;
+	background-color:bisque; 
+}
+
+th {
+	text-align: center;
+	color: #ffffff;
+	background-color:beige;
+}
+
+dt{
+cursor: pointer;    	    
+font-weight: bold;    
+font-size : 1.5em;    
+line-height: 2em;    
+background: Black;    
+border-bottom: 1px solid #c5c5c5;    
+border-top: 1px solid white;
+color: darkgoldenrod;
+}
+
+dt:first-child { border-top: none; }
+
+dt:nth-last-child(2) { border-bottom: none; }
+.hide { display: none;}

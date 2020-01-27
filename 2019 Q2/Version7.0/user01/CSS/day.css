@@ -1,0 +1,9 @@
+body{
+    background: #ffffff url("../Images/Day.jpeg") no-repeat;
+    background-size: cover;
+    color: yellow;
+}
+h1 {
+	font-size: 1.3em;
+    color: orange;
+}

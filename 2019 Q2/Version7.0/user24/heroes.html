@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<HTML lang="en">
+<head>
+<title>My Heroes</title>
+    <link rel="shortcut icon" href="CSS/shazam.ico"/>
+    <link href="CSS/heroes-style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h2>My Top 5 Favorite Super Heroes</h2>
+ <table>
+ <thead><tr><th>Rank</th><th>Hero</th><th>Alter Ego</th><th>Powers</th></tr></thead>
+ <tr style="color:black;background-color:white"><td>1</td><td>Moon Knight</td><td>Marc Spector</td><td>Expert Detective, Martial Arts, Power Based On The Lunar Cycle</td></tr>
+ <tr style="color:yellow;background-color:red"><td>2</td><td>Flash</td><td>Barry Allen</td><td>Super Speed, Time Travel, Phasing Through Objects</td></tr>
+ <tr style="color:red;background-color:darkblue"><td>3</td><td>Thor</td><td>Thor Odinson</td><td>Super Strength, Ability To Wield Mjolnir</td></tr>
+ <tr style="color:white;background-color:red"><td>4</td><td>Captain Marvel</td><td>Billy Batson</td><td>Enhanced Intellect, Super Strength, Invulnerability, Power Over Lightning, Flight, Super Speed</td></tr>
+ <tr style="color:black;background-color:lawngreen"><td>5</td><td>Green Lantern</td><td>Hal Jordan</td><td>Flight, Universal Language Translation, Generation of Hard-Light Constructs, Space Travel</td></tr>
+ </table>
+<div id="footer">
+<p>
+Information can be found here: <a href="https://marvel.fandom.com/wiki/Marvel_Database">Marvel Comics</a> or here: <a href="https://dc.fandom.com/wiki/DC_Comics_Database">DC Comics</a>
+</p>
+    </div>
+    </body>
+<dl>
+	<dt>Home</dt>
+	<dd><button class="Home"><a href='index.html'>Home</a></button></dd>
+	<dt>About</dt>
+	<dd><button class="AboutMe"><a href='webDevUser24.html'>About Me</a></button></dd>
+	<dt>My Heroes</dt>
+	<dd><button class="Heroes"><a href="heroes.html">My Favorite Superheroes</a></button></dd>
+	<dt>Cool Powers</dt>
+	<dd><button class="Powers"><a href="powers.html">Cool Powers I'd Want</a></button></dd>
+    <dt>Questions</dt>
+	<dd><button class="Questions"><a href="questions.html">Miscellaneous Questions</a></button></dd>
+</dl>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+    </script>
+</HTML>

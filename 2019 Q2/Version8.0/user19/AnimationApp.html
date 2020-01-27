@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <link href="CSS/bootstrapEdit.css" rel="stylesheet">
+      
+    <link href="CSS/MainCSS.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+
+    <link rel="stylesheet" type="text/css"
+
+          href="https://fonts.googleapis.com/css?family=Lobster">
+
+    <title>Animation App</title>
+        
+    <style>
+        .box {
+        width: 400px;
+        background: red;
+        padding: 2em;
+        position: relative;
+        -webkit-tansition: border-radius 1s;
+        }
+        .rounded { border-radius: 50}
+    </style>
+    </head>
+    <body>
+<div class="box">
+    <h2>Content</h2>
+        <p>tentnoC</p>
+</div>
+        
+<p><button>Animate!</button></p>
+        
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+      <div class="container">
+
+        <div class="navbar-header">
+
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+
+            <span class="sr-only">Toggle navigation</span>
+
+            <span class="icon-bar"></span>
+
+            <span class="icon-bar"></span>
+
+            <span class="icon-bar"></span>
+
+          </button>
+
+         
+
+        </div>
+
+        <div class="collapse navbar-collapse">
+
+           <ul class="nav navbar-nav">
+                <li><a href="FAQ.html">Back</a></li>
+               
+               <li><a href="AnimationApp.html">Refresh</a></li>
+              
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+    
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    
+<script>
+(function() {
+    var box = $('div.box');
+        w = $(window),width() / 2 - box.outerWidth() / 2,
+        h = $(window).height() / 2 - box.outerHeight() / 2;
+    $('button').on('click', function() {
+        box.animate({
+            'lift': w,
+            'position': 'absolute'
+        })
+        .animate({
+            'top': h
+        }, 2000);
+            
+</script>
+</body>
+</html>
+
+    

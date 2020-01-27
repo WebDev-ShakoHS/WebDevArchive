@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <meta charset=utf-8>
+        <title>Micah's Intro to JQuery</title>
+        <script src="JS/jquery-3.4.1.js"></script>
+        <link rel= 'stylesheet' href='CSS/Hexane.css'>
+        
+        <style>
+            ul li{
+                color: rebeccapurple;
+            }
+           
+            h1{
+                color: coral;
+            }
+            .beep{
+                font-weight: bold;
+            }
+        </style>
+        <script>
+            $(document).ready(function() {
+                $('h1').addClass('beep');
+            });
+        
+        </script>
+    </head>
+   
+<body>  
+    <h1> me want A</h1>
+    <ul> <li>ok</li><li>lemon</li><li>okay</li><li>lemone</li></ul>
+    
+    <script>
+        $('ul li').addClass ('ul li');
+       
+        $('h1').addClass ('h1');
+    </script>
+    
+    <button data-file='Butane'>Night</button>
+    <button data-file='Hexane'>Day</button>
+    
+    <script>
+    (function(){
+       var link = $('link');
+       $('button').click(function() {
+           var $this = $(this);
+      var stylesheet = $this.data('file');
+           $(this).siblings('button').removeAttr('disabled');
+           console.log(stylesheet);
+           $('link').attr('href', 'CSS/' + stylesheet +'.css');
+           $this.attr('disabled', 'disabled');
+       });
+    })();
+    </script>
+<dl>
+	<dt>How old are you?</dt>
+	<dd>15.</dd>
+	<dt>What is your favorite color?</dt>
+	<dd>Purple.</dd>
+	<dt>What is your favorite class?</dt>
+	<dd>Web Development.</dd>
+	<dt>Do you have siblings?</dt>
+	<dd>One sister.</dd>
+	<dt>What pets do you have?</dt>
+	<dd>I have two dogs.</dd>
+</dl>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+
+
+</script>
+
+    </body>
+</html>

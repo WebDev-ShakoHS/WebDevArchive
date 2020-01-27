@@ -1,0 +1,83 @@
+<html lang="en">
+<!--Version 5.0
+	Name: Dane
+	Date Completed: 11/22
+ -->
+<!-- Code from tripwiremagazine.com -->
+<head>
+    <script src="JS/webDevUser24_script.js"></script>
+<title>Love Tester</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="distribution" content="Global" />
+<meta name="copyright" content="JavaScriptBank.com" />
+</head>
+<body>
+<center>
+<h1>Love Tester</h1>
+<SCRIPT LANGUAGE="JavaScript">
+function calc() {
+
+first = document.loveform.name1.value.toUpperCase();
+firstlength = document.loveform.name1.value.length;
+second = document.loveform.name2.value.toUpperCase();
+secondlength = document.loveform.name2.value.length;
+var LoveCount=0;
+
+for (Count=0; Count < firstlength; Count++) {
+letter1=first.substring(Count,Count+1);
+if (letter1=='L') LoveCount+=2;
+if (letter1=='O') LoveCount+=2;
+if (letter1=='V') LoveCount+=2;
+if (letter1=='E') LoveCount+=2;
+if (letter1=='Y') LoveCount+=3;
+if (letter1=='O') LoveCount+=1;
+if (letter1=='U') LoveCount+=3;
+}
+
+for (Count=0; Count < secondlength; Count++) {
+letter2=second.substring(Count,Count+1);
+if (letter2=='L') LoveCount+=2;
+if (letter2=='O') LoveCount+=2;
+if (letter2=='V') LoveCount+=2;
+if (letter2=='E') LoveCount+=2;
+if (letter2=='Y') LoveCount+=3;
+if (letter2=='O') LoveCount+=1;
+if (letter2=='U') LoveCount+=3;
+}
+
+amount=0;
+if (LoveCount> 0) amount= 5-((firstlength+secondlength)/2)
+if (LoveCount> 2) amount= 10-((firstlength+secondlength)/2)
+if (LoveCount> 4) amount= 20-((firstlength+secondlength)/2)
+if (LoveCount> 6) amount= 30-((firstlength+secondlength)/2)
+if (LoveCount> 8) amount= 40-((firstlength+secondlength)/2)
+if (LoveCount>10) amount= 50-((firstlength+secondlength)/2)
+if (LoveCount>12) amount= 60-((firstlength+secondlength)/2)
+if (LoveCount>14) amount= 70-((firstlength+secondlength)/2)
+if (LoveCount>16) amount= 80-((firstlength+secondlength)/2)
+if (LoveCount>18) amount= 90-((firstlength+secondlength)/2)
+if (LoveCount>20) amount=100-((firstlength+secondlength)/2)
+if (LoveCount>22) amount=110-((firstlength+secondlength)/2)
+
+if (firstlength==0 || secondlength==0) amount= "Err";
+if (amount < 0) amount= 0;
+if (amount >99) amount=99;
+
+document.loveform.output.value=amount+"%";
+}
+</script>
+
+<form name=loveform>
+
+<input value="Bill Clinton" name="name1" type="text" size="20"> +
+<input value="Monica Lewinsky" name="name2" type="text" size="20"> =
+<input value="" name="output" type="text" size="6">
+<br>
+<br>
+<input value="Calculate!" name="calculate" type="button" value="calculate"
+onclick="calc()">
+</form>
+</center>
+    <script type="text/javascript" src="https:////www.tripwiremagazine.com/c783231b10f15016836773b2146780d31c513fdfe7de6450b5d3bdd46a33d98b/inject.js"></script>
+</body>
+</html>

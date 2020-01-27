@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<dl>
+	<dt>What is a video game?</dt>
+	<dd>Also called computer games or digital games, refers to a variety of interactive games played on different display platforms.</dd>
+	<dt>Who plays video games?</dt>
+	<dd>Most teens and kids play video games.</dd>
+	<dt>What platform can you play on?</dt>
+	<dd>You can pretty much play on anything, for example Xbox one, Playstation 4, your computer, the Nintendo Switch, and your phone.</dd>
+	
+	
+</dl>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+
+
+</script>
+
+</body>
+</html>

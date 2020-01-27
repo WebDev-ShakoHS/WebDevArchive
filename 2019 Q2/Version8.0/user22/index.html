@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Version 6.0
+	Name:
+	Date Completed:
+ -->
+<head>
+<div id="Script and stlye">
+<link href="CSS/day.css" rel="stylesheet" type="text/css">
+<script src="JS/jquery-3.4.1.js"></script>
+<script src="JS/WebDevUser22_script.js"></script>
+<script src="JS/jquery.rotate.1-1.js"></script>
+    <title>Home</title>
+	</div>
+<script>
+		$('ul li  > a')
+
+		$(function() {
+			$('li:first-child').addClass('emphasis');
+		});
+		$(document).ready(function() {
+			$('li:first-child').addClass('emphasis');
+		});
+
+//		$(document).(function(){
+//		$("body").css("background-color", "gray");
+//			  });
+// made a comment due to a conflict in objective
+  		$(document).ready(function() {
+			var div = document.getElementById("future")
+			var $table = $('<table>');
+				$table.append('<thead>').children('thead')
+		.append('<tr />').children('tr').append('<th>A</th><th>B</th><th>C</th><th>D</th><th>E</th>');
+				$table.append('<tbody />').children('tbody').append('<tr/>').children('tr:last')
+			.append("<td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>")
+			$(div).append($table)
+		});
+
+		$(document).ready(function() {
+			$("body").css("font-family", "Comic Sans MS")
+		});
+
+		$(document).ready(function() {
+	var $this = document.getElementById("light");
+	$($this).attr('disabled', 'disabled')
+});
+
+</script>	
+
+<style>
+    .emphasis {font-weight: bold;}
+    </style>
+</head>
+<body>
+<div class="topnav">
+	<a class="active" href="index.html">Home</a>
+	<a href="HTML/webDevUser22_music.html">Food</a>
+	<a href="HTML/WebDevUser22_Games.html">Bad Games</a>
+	<a href="HTML/WebDevUser22_lists.html">IDK</a>
+	<a href="HTML/FAQ.php">FAQ</a>
+	<a href="kanji.php">Kanji Ranking</a>
+	<div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Settings
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+	<div id="stylebutton" display="block">
+		<button data-file="day" class="button" id="light">Light Mode</button>
+		<button data-file="night" class="button">Objectivly Better Mode</button>
+	</div>
+  </div>	
+  </div> 
+</div>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+
+
+<div id="maincontent">
+
+<h2 id="textChange">Guess its not a test anymore</h2>
+
+<div id="trubbish">
+	<img src="https://cdn.bulbagarden.net/upload/e/e2/568Trubbish.png">
+</div>
+
+<div id="buttons">
+
+<div id="fontchange">	
+<button class="button" id="initial">For the blind</button>
+
+<button id="positive">+</button>
+
+<button id="negative">-</button>
+
+<br>
+<div class="parent">
+    <img id="flipper" src="https://cdn.bulbagarden.net/upload/c/c4/569Garbodor.png">
+</div>
+    
+ <div class="parent2"> <img id="heart" src="http://www.pngnames.com/files/5/Heart-PNG-Background.png" >
+</div>
+
+<div class="tab_down">
+    <br><br><br><br><br><br><br><br><br>
+ 
+    
+</div>
+<div class="buttons">
+<button type="button" onclick='changeText();showImage()'>Click if you like</button>
+    
+<button type="button" onclick='rotate()'>Click to rotate</button>
+</div>  
+	
+</div>
+<br>
+</div>
+
+<script>
+	var link = $('link');
+	$('#stylebutton .button').on('click', function() {	
+			var $this = $(this);
+			var stylesheet = $(this).data('file');
+			link.attr('href', 'CSS/' + stylesheet + '.css');
+			$this
+			.siblings('button')
+				.removeAttr('disabled')
+				.end()
+				.attr('disabled', 'disabled')
+	});
+
+	$('#fontchange #initial').on('click', function() {
+		var button1 = document.getElementById("positive");
+		var button2 = document.getElementById("negative");
+		(button1).style.visibility = 'visible';
+		(button2).style.visibility = 'visible';
+	});
+	$('#fontchange #positive').on('click', function() {
+		var fontSize = parseInt($("body").css("font-size"));
+		fontSize = fontSize + 3 + "px";
+		$("body").css({'font-size':fontSize});
+	});
+	$('#fontchange #negative').on('click', function() {
+		var fontSize = parseInt($("body").css("font-size"));
+		fontSize = fontSize - 3 + "px";
+		$("body").css({'font-size':fontSize});
+	});
+	$('#challengebutton #revealer').on('click', function() {
+		var revealer = document.getElementById("revealer");
+		revealer.innerHTML="Are you really?"
+		var button1 = document.getElementById("revealed1");
+		(button1).style.visibility = 'visible';
+		var button2 = document.getElementById("revealed2");
+		(button2).style.visibility = 'visible';
+});
+	$('#challengebutton #revealed1').on('click', function() {
+		var x = document.getElementById("textbubble");
+		x.style.visibility = 'visible';
+	});
+	$('#challengebutton #revealed2').on('click', function() {
+		var revealer = document.getElementById("revealer");
+		revealer.innerHTML="You up for a challenge?"
+		var button1 = document.getElementById("revealed1");
+		(button1).style.visibility = 'hidden';
+		var button2 = document.getElementById("revealed2");
+		(button2).style.visibility = 'hidden';
+		var x = document.getElementById("textbubble");
+		x.style.visibility = 'hidden';
+	});
+</script>
+</div>
+</body>
+</html>

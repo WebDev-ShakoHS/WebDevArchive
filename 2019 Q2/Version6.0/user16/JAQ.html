@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+</head>
+    <body>
+<title>
+    <h1>cheesey's hours</h1>
+        </title>
+<dl>
+	<dt>Monday hours</dt>
+	<dd>We are open from 3:00 to 11:00</dd>
+	<dt>Tuseday hours</dt>
+	<dd>We are open from 3:00 to 11:00</dd>
+	<dt>wensday hours</dt>
+	<dd>We are open from 3:00 to 11:00</dd>
+	<dt>Thursday hours</dt>
+	<dd>We are open from 3:00 to 11:00</dd>
+    <dt>Friday hours</dt>
+	<dd>We are open from 3:00 to 11:00</dd>
+    <dt>Saturday Hours</dt>
+    <dd>We are open from 12:00 to 10:00</dd>
+	<dt>Sunday hours</dt>
+	<dd>We are open from 12:00 to 10:00</dd>
+</dl>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+
+
+</script>
+
+</body>
+</html>

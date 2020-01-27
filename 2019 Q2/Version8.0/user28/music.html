@@ -1,0 +1,148 @@
+<html lang="en">
+<!--Version 7.0
+	Name:
+	Date Completed:
+ -->
+<head>
+    <meta charset=utf-8>
+<link rel="stylesheet" href="CSS/music.css">
+<title>Favorites</title>
+<script src="JS/jquery-3.4.1.js"></script>
+</head>
+    
+
+<body>
+    <style>
+    body {
+  background-image: url('images/fact.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+        }
+    </style>
+
+        <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="music.html">Music</a></li>
+  <li><a href="Games28.html">Arcade</a></li>
+  <li><a href="Aboutme28.html">About Me</a></li>
+  <li><a href="faq28.html">Poptart History</a></li>
+  <li><a href="lists.html">Lists</a></li>
+  <li><a href="http://127.0.0.1:8080/user28/index.php">Merchandise</a></li>
+<li><a href="http://127.0.0.1:8080/user28/weather/index.php">Weather</a></li>
+</ul>
+    <br>
+    <h1>Top 5 Songs</h1>
+    
+    <table class='center' width="25%">
+  <tr>
+    <th>Rank</th>
+    <th>Song</th>
+    <th>Artist</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Let Her Go</td>
+    <td>Passenger</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>SAD (Clap Your Hands</td>
+    <td>Young Rising Sons</td>
+  </tr>
+    <tr>
+    <td>3</td>
+    <td>Zero</td>
+    <td>Imagine Dragons</td>
+  </tr>
+    <tr>
+    <td>4</td>
+    <td>Ophelia</td>
+    <td>The Lumineers</td>
+  </tr>
+    <tr>
+    <td>5</td>
+    <td>Stan</td>
+    <td>Eminem</td>
+  </tr>
+</table>
+<br>
+    <div class="imags">
+        <img src="images/pass.jpeg" alt="Passenger Album Cover">
+        <img src="images/yrs.jpeg" alt="Young Rising Sons Band Picture">
+    </div>
+    <style type="text/css">
+        .imags img {
+            position: absolute;
+            top: 320;
+            left: 820;
+            width: `10%;
+        }
+        .imags img:last-child {
+            display: none;
+        }
+    </style>
+    
+    <script>
+$('.imags').hover(function () {
+    $(this).find("img:last").fadeToggle();
+});
+    </script>
+    
+    <div class="imagees">
+        <img src="images/imagine.jpeg" alt="Imagine Dragons Band Picture">
+        <img src="images/ophelia.jpeg" alt="Ophelia Album Cover">
+    </div>
+    <style type="text/css">
+        .imagees img {
+            position: absolute;
+            top: 320;
+            left: 350;
+            width: 16%;
+        }
+        .imagees img:last-child {
+            display: none;
+        }
+    </style>
+    <script>
+$('.imagees').hover(function () {
+    $(this).find("img:last").fadeToggle();
+});
+    </script>
+    <div class="imagess">
+        <img src="images/spotty.png" alt="Spotify Logo">
+        <img src="images/stan.jpeg" alt="Stan Album Cover">
+        
+    </div>
+        <style type="text/css">
+        .imagess img {
+            position: absolute;
+            top: 320;
+            left: 585;
+            width: 16%;
+        }
+    </style>
+                <script>
+$('.imagess').hover(function () {
+    $(this).find("img:last").fadeToggle();
+});
+    </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+     <br>
+    <br>
+    <br>
+    <br>
+    <br>
+     <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>Hover over images to see some cool effects.  Also,  all songs can be found on Spotify and YouTube as far as I know.</p>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<dl>
+	<dt>who is leading the league in sacks for D-lineman?</dt>
+	<dd>Shaquil Barret</dd>
+	<dt>whos the highest paid DE</dt>
+	<dd>Melvin Ingram III.</dd>
+	<dt>who has the most forced fumbles</dt>
+	<dd>Shaquil Barret.</dd>
+	<dt>who had the most sacks in the previous season?</dt>
+	<dd>Aaron Donald.</dd>
+	<dt>Whos the heaviest d lineman?</dt>
+	<dd>william perry 328.</dd>
+</dl>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+
+
+</script>
+
+</body>
+</html>

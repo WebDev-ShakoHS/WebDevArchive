@@ -1,0 +1,50 @@
+body {
+    /*background-color: #121212; The page background will be black */
+	font-family: "Courier New", Courier, monospace;
+	color: #0a2f30;
+    background-image: url("../home.jpg");
+
+}
+
+h1 {
+	
+	text-align: center;
+    font-family: "Courier New", Courier, monospace;
+}
+
+
+h3{
+        
+        text-align: center;
+    font-family: "Courier New", Courier, monospace;
+}
+
+p{
+    font-size: 1.3em;
+    text-align: center;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	border-collapse: collapse;
+	cellspacing: 0px;
+}
+
+tr {
+	border: 1px solid #000000;
+	text-align: center;
+	background-color:#a780d9; 
+}
+
+th {
+	text-align: center;
+	color: #ffffff;
+	background-color: #451c78;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}

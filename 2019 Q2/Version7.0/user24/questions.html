@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Miscellaneous Questions</title>    
+    <link rel="shortcut icon" href="CSS/shazam.ico"/>
+    <link href="CSS/questions-style.css" rel="stylesheet" type="text/css">
+</head>
+
+<h1>Miscellaneous Questions</h1>
+    
+    <h3>What college do you plan to attend?</h3>
+	<p>I plan to attend Iowa State.</p>
+	<h3>Do you have any siblings?</h3>
+	<p>Yes, I have one younger sister.</p>
+	<h3>What type of music do you like?</h3>
+	<p>I'm a big fan of power metal.</p>
+	<h3>Do you own any pets?</h3>
+	<p>I am the proud owner of 2 very good dogs.</p>
+
+<dl>
+	<dt>Home</dt>
+	<dd><button class="Home"><a href='index.html'>Home</a></button></dd>
+	<dt>About</dt>
+	<dd><button class="AboutMe"><a href='webDevUser24.html'>About Me</a></button></dd>
+	<dt>My Heroes</dt>
+	<dd><button class="Heroes"><a href="heroes.html">My Favorite Superheroes</a></button></dd>
+	<dt>Cool Powers</dt>
+	<dd><button class="Powers"><a href="powers.html">Cool Powers I'd Want</a></button></dd>
+    <dt>Questions</dt>
+	<dd><button class="Questions"><a href="questions.html">Miscellaneous Questions</a></button></dd>
+</dl>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+    </script>
+    
+</html>

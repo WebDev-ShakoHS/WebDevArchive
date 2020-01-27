@@ -1,0 +1,31 @@
+body {
+	font-family: "Marker Felt", "Comic Sans MS", fantasy;
+	color: #003366;
+    
+}
+h2 {
+	font-size: 1.1em;
+	text-align: center;
+}
+
+h3 {
+	font-size: 1.1em;
+	text-align: center;
+}
+ol {
+counter-reset: level1;
+font-size: 11px;
+margin: 0 auto;
+width: 50%;
+}
+
+ol li:before {
+content: counter(level1, decimal) " ";
+counter-increment: level1;
+}
+
+.ngg-gallery-list li {
+display: inline-block;
+margin: 5px 2px !important;
+overflow: hidden;
+} 

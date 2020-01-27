@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!--Version 4.0
+
+        Name:
+
+        Date Completed:
+
+ -->
+
+<head>
+
+
+<link href="CSS/webDevUser21.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+
+
+
+    <h1>I am Web Dev User 21</h1>
+
+   
+
+    <style>
+
+        h3{
+
+            font-size: 2em;
+
+        }
+
+    </style>
+
+    <h3>"And I'm a Web Developer"</h3>
+
+
+
+.button1 {
+  border-radius: 8px;
+   
+}
+
+.button2 {
+  border-radius: 30%;
+}
+
+.red { 
+   background-color: #ff0000;
+}   
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+    <button>Hire me</button>
+
+    <button class='button'>Hire me</button>
+
+    <button class='button button1'>Hire me</button>
+
+    <button class='button button2'>Hire me</button>
+
+    <button class='button button2 red'>Hire me</button>
+
+
+    <div class='content'> 
+
+        <p>Page content..</p>
+
+        <p>Some more page content..</p>
+<div class='content'> #morecontent {
+  background-color: yellow;
+    
+}
+
+    </div>
+
+   
+
+    <p id="morecontent">Even more content</p>
+
+   
+
+</body>
+
+</html>
+</body>
+
+</html>
+
+
+body {
+	<td style=color:#00FF00; background-color:darkblue;>
+    font-family: "Marker Felt", "Comic Sans MS", fantasy;
+	color: #003366;
+    background-image: url("..//images/WebDevUser21.jpg")
+}
+
+h1 {
+	font-size: 1.3em;
+	text-align: center;
+}
+
+h2{
+        font-size: 1.1em;
+        text-align: center;
+        color: aqua
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	border-collapse: collapse;
+    cellspacing: 0px;
+    <td style="color:#00FF00; background-color:sienna;">
+    
+}
+
+tr {
+	border: 1px solid #ffffff;
+	text-align: center;
+	background-color:#9FB6CD; 
+}
+
+img{
+  .center  
+  margin: auto;
+  width: 15%;
+  border: 3px solid green;
+  padding: 10px;
+    <td style=color:#00FF00; background-color:darkblue;>
+};
+ 
+th {
+	text-align: center;
+	color: #ffffff;
+	background-color: #003366 
+        
+    
+    
+}

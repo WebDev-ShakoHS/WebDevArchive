@@ -1,0 +1,122 @@
+body {
+	background-color:white;
+	color:black;
+	font-family:Comic Sans MS;
+	height: 2000px;
+}
+button {
+	border: solid black 1px;
+	padding: 16px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+	margin: 2px 1px;
+	cursor: pointer;
+	border-radius: 4px;
+	width:164.02px;
+}
+table {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-collapse: collapse;
+	margin:5px;
+}
+tr {
+	border: 2px solid black;
+	text-align: center;
+	background-color:gray; 
+}
+
+th {
+	text-align: center;
+	color: #ffffff;
+	background-color: black;
+	border: 1px solid black;
+}
+h2,h1 {
+	text-align: center;
+	
+}
+.dropdown {
+	margin:5px;
+	text-align:right;
+	
+}
+dl {
+	
+}
+dd{
+	
+}
+dt{
+	color:navy;
+	cursor:pointer;
+	font-weight:bold;
+	font-size:1.1em;
+	line-height: 1.7em;
+	background-color:#cbcdd1;
+	border-bottom: 1px solid #c5c5c5;
+	border-top:1px solid white;
+	
+}
+dt:first-child {
+	border-top:none;
+}
+dt:nth-last-child(2) {
+	border-bottom:none;
+}
+.hide {
+	display:none;
+	text-indent:-20px;
+}
+#positive, #negative {
+	visibility: hidden;
+	width:80.01px;
+}
+#trubbish {
+	position:fixed;
+    right:0;
+    bottom:0;
+    margin:0;
+    padding:0;
+	width: 20%;
+	height: 20%;
+}
+#trubbish img {
+	width: 200px;
+	height: 200px;
+}
+#textbubbles {
+	position:fixed;
+    right:80px;
+    bottom:-20px;
+    margin:0;
+    padding:0;
+	width: 20%;
+	height: 20%;
+}
+#textbubble {
+	visibility: hidden;
+}
+#revealed1, #revealed2 {
+	visibility: hidden;
+	width:86.3px;
+}
+#revealer {
+	height: 49px;
+	width: 180px;
+
+}
+#positive {
+	margin-right: 0px
+}
+#negative {
+	margin-left: 0px;
+}
+
+
+
+
+

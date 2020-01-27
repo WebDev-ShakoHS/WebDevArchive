@@ -1,0 +1,66 @@
+<html lang="en">
+<!--Version 7.0
+	Name:
+	Date Completed:
+ -->
+ <head>
+
+     <title>About Me</title>
+<link href="CSS/aboutme-style.css" rel="stylesheet" type="text/css">
+     <link rel="shortcut icon" href="CSS/shazam.ico"/>
+  </head>
+
+
+  <body>
+
+
+    
+                        <h1>About Me</h1>
+
+                        <p>
+My name is Dane Singer, and I am a huge superhero nerd. Ever since I was a kid, I found the idea of people with special abilities to be amazing. To be honest, superheroes are most likely the greatest influence on my personality; a lot of the choices I make are based on how I feel a superhero would act. I made this website because I want others to feel the same sense of awe I feel from superheroes. 
+                        </p>
+      <p>
+      In this website, I focus mainly on comic book superheroes, but I also have interests in other types of heroes from movies and video games, such as Harry Potter or Overwatch's Reinhardt. My hobbies mainly consist of playing video games, but I also enjoy reading books and comics (if that wasn't obvious) and playing Dungeons and Dragons with my friends. Even my hobbies consist of me doing things that allow me to feel more like a superhero, even if it's in a different way, which makes me realize just how bad my obsession with superheroes is.
+      </p>
+      
+      <p>
+      For more information about me check out the "Questions" page using the button on the left.
+      </p>
+
+
+<dl>
+	<dt>Home</dt>
+	<dd><button class="Home"><a href='index.html'>Home</a></button></dd>
+	<dt>About</dt>
+	<dd><button class="AboutMe"><a href='webDevUser24.html'>About Me</a></button></dd>
+	<dt>My Heroes</dt>
+	<dd><button class="Heroes"><a href="heroes.html">My Favorite Superheroes</a></button></dd>
+	<dt>Cool Powers</dt>
+	<dd><button class="Powers"><a href="powers.html">Cool Powers I'd Want</a></button></dd>
+    <dt>Questions</dt>
+	<dd><button class="Questions"><a href="questions.html">Miscellaneous Questions</a></button></dd>
+</dl>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+    </script>
+
+
+</body>
+
+</html>

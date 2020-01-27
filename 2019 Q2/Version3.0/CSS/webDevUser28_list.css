@@ -1,0 +1,30 @@
+body {
+	font-family: "Marker Felt", "Comic Sans MS", fantasy;
+	color: #003366;
+}
+
+h1 {
+    font-family: "Marker Felt", "Comic Sans MS", fantasy;
+	color: #ff0000;
+	font-size: 1.3em;
+	text-align: center;
+}
+
+h2{
+    font-family: "Marker Felt", "Comic Sans MS", fantasy;
+	color: #003366;
+    font-size: 1.1em;
+    text-align: center
+}
+
+ul {
+  text-align: center;
+  list-style: inside;
+    color: black
+}
+ol {
+    text-align: center;
+    list-style-position: inside;
+    color: black
+
+}

@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title></title>
+	<link rel="stylesheet" href="CSS/FAQ.css">
+</head>
+<body>
+<hl>Very Important FAQ (not really) {don't listen to this guy, this is very important, you can trust me becuase I'm curly unlike this lier}</hl>
+<dl>
+	<dt>Hey what's up?</dt>
+	<dd>Nothing much, thanks for asking.</dd>
+	<dt>Sooooo, how was your day so far? Did you do anything fun?</dt>
+	<dd>umm fine I guess, didn't really do anything though.</dd>
+	<dt>oh ok. Do you have any plans tommorow?</dt>
+	<dd>not really.</dd>
+	<dt>Are you sure?</dt>
+	<dd>stop asking me questions and go away please.</dd>
+	<dt>what, why?</dt>
+	<dd>/\/\/\/\/\/\/\/\/\nn/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\sdwajbdywvds bnjdabuv haegr78h3ueijksbfhankja.............frfefef.........fefeagbn</dd>
+</dl>
+    
+<button>omg please don't click this button. I am being hunted down right now by the FBI becuase I pressed this button, I know too much. Please don't make the same mistake I did.</button>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+<script>
+$(document).ready(function(){
+    $("button").hover(function(){
+        $("button").css("background-color", "red");
+  $("button").click(function(){
+    $("button").hide();
+    $("dt").hide();
+    $("dd").hide();
+    $("hl").hide();
+  });
+  });
+});
+</script>
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+
+
+</script>
+
+</body>
+</html>

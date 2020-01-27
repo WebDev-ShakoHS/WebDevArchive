@@ -1,0 +1,70 @@
+
+<html>
+   
+<head>
+   
+    <title>August</title>  
+   
+    <script src="JS/jquery-3.4.1.js"></script>
+   
+    <style>
+        .title {color: black;
+        }
+        ul li {color: black;
+        }
+        .Rainbow {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; font-size: 40px;
+}
+    .emphasis {font-weight: bold; font-variant: small-caps;}
+    </style>
+   
+    <script>
+    $(document).ready(function() {
+    $('li:first-child').addClass('emphasis');
+        });
+    </script>
+   
+</head>
+   
+<body>
+    <h1>Hobbies</h1>
+   
+    <ul><li>Photography</li><li>Coding</li><li>Playing an instrument</li><li>Writing</li></ul>
+   
+    <script>
+    var lis = $('ul li');
+    $('h1').addClass('title');
+       
+   
+    </script>
+   
+   
+    <link rel='stylesheet' href="day.css">
+   
+    <button data-file="day">Day</button>
+    <button data-file="night">Night</button>
+   
+   <script>
+    (function() {
+        var link = $('link');
+        $('button').click(function() {
+            var $this = $(this);
+                stylesheet = $this.data('file');
+            
+            link.attr('href', stylesheet + '.css');
+            
+            $this
+                .siblings('button')
+                    .removeAttr('disabled')
+                    .end()
+                    .attr('disabled', 'disabled');
+        });
+    })();
+    </script>
+   
+   
+</body>
+   
+</html>
+      

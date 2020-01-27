@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title></title>
+	<link rel="stylesheet" href="CSS/day.css">
+	<script src="JS/jquery-3.4.1.js"></script>
+</head>
+<body>
+<h1>FAQ</h1>
+
+<div  class="dropdown"><dl>
+<dt>What is this website?</dt>
+<dd>Good Question</dd>
+<dt>Whats with the Pokemon in your image functions?</dt>
+<dd>It's the first thing i thought of when i needed an image</dd>
+<dt>I like the night mode</dt>
+<dd>Thats because you're not an animal</dd>
+	
+</dl></div>
+<div id="stylebutton" display="block">
+<button data-file="day" class="button" id="light">Light Mode</button>
+<button data-file="night" class="button">Objectivly Better Mode</button></div>
+<div id="fontchange">	
+<button class="button" id="initial">For the blind</button>
+
+<button id="positive">+</button>
+
+<button id="negative">-</button>
+	
+</div>
+
+
+<script>
+	
+(function() {	
+	$('dd').filter(':nth-child(n)').addClass('hide');
+	$('dl').on('mouseout', 'dt', function() {
+		$(this).next().slideUp(200)
+	});
+	$('dl').on('mouseover', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+
+	});
+
+})();
+
+</script>
+<script>
+	var link = $('link');
+	$('#stylebutton .button').on('click', function() {	
+			var $this = $(this);
+			var stylesheet = $(this).data('file');
+			link.attr('href', 'CSS/' + stylesheet + '.css');
+			$this
+			.siblings('button')
+				.removeAttr('disabled')
+				.end()
+				.attr('disabled', 'disabled')
+	});
+
+	$('#fontchange #initial').on('click', function() {
+		var button1 = document.getElementById("positive");
+		var button2 = document.getElementById("negative");
+		(button1).style.visibility = 'visible';
+		(button2).style.visibility = 'visible';
+	});
+	$('#fontchange #positive').on('click', function() {
+		var fontSize = parseInt($("body").css("font-size"));
+		fontSize = fontSize + 3 + "px";
+		$("body").css({'font-size':fontSize});
+	});
+	$('#fontchange #negative').on('click', function() {
+		var fontSize = parseInt($("body").css("font-size"));
+		fontSize = fontSize - 3 + "px";
+		$("body").css({'font-size':fontSize});
+	});
+	
+</script>
+
+</body>
+</html>

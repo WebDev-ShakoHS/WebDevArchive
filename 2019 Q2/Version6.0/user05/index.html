@@ -1,0 +1,59 @@
+<html>
+
+    <head>
+        <title> Em trying jQuery </title>
+        <script src="JS/jquery-3.4.1.js">
+        </script>
+        
+        <style src=CSS/day.css></style>
+        <link rel='stylesheet' href="CSS/day.css">
+        
+
+        <style>
+            ul li {color: blueviolet;}
+            .green{color: lawngreen}
+            .aqua{color:aqua}
+            .purp{color:purple}
+            .emp{font-size: 50}
+        </style>
+        
+        <script>
+        $(document).ready(function(){
+            $('li:first-child').addClass('green')
+            $('li:first-child').addClass('emp')
+            $('li:last-child').addClass('purp')
+            $('li:last-child').addClass('emp')
+        });
+            
+        </script>
+        
+    </head>
+
+    <body>
+        <h1>Football Dudes</h1>
+        <ul>
+            <li>Packers</li>
+            <li>Vikings</li>
+            <li>Lions</li>
+            <li>Bears</li>
+            <li>Seahawks</li>
+            <li>I don't know football</li>
+        </ul>
+        
+        <button data-file= "day">Day</button>
+        <button data-file= "night">Night</button>
+        
+        <script>
+            var lis= jQuery("ul li");
+            $('h1').addClass('aqua');
+            
+            (function(){
+                $('button').click(function(){
+                $('link').attr('href','CSS/night.css');
+                });
+            })();
+        </script>
+        
+    </body>
+    
+</html>

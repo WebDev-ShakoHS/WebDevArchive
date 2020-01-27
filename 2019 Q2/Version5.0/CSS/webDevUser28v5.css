@@ -1,0 +1,31 @@
+body {
+    font-family: "Marker Felt", "Comic Sans MS", fantasy;
+	color: #000000;
+}
+
+h1 {
+	font-size: 1.3em;
+	text-align: center;
+}
+
+h2{
+        font-size: 1.1em;
+    text-align: center
+}
+
+
+body{ 
+    background-image: url(black.png)
+}
+.button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  background-color: grey;
+  color: white;
+  padding: 6px 6px 6px 6px;
+}
+.button:hover {
+    background-color: white;
+  color: grey;
+}

@@ -1,0 +1,57 @@
+<html lang="en">
+<!--Version 6.0
+	Name: August Watson
+	Date Completed: 12/3/19
+ -->
+    <head>
+        <meta charset=utf-8>
+        <title> Web Development User #28 </title>
+        <link rel="stylesheet" href="style.css"
+
+    </head>
+    <body>
+        <dl>
+        <dt>What's the greatest song to ever exist?</dt>
+        <dd>Never Gonna Give You Up by Rick Astley.</dd>
+        <dt>Are you sure? That song is a bit weird.</dt>
+        <dd>I'm very sure. He's my idol.</dd>
+        <dt>That's strange. Why?</dt>
+        <dd>I don't know. Speaking of strange, Stranger Things is a great show.</dd>
+        <dt>Hmm, don't you think Doctor Strange is better?</dt>
+        <dd>Nope. Stranger Things is the best. Marvel sucks.</dd>
+        <dt>So, you think DC is better?</dt>
+        <dd>Yes. And it is. *note, Marvel is better than DC in my opinion.*</dd>
+        </dl>
+        
+        <p>Click me to see a magic trick!</p>
+        
+    
+        <script src="JS/jquery-3.4.1.js"></script>
+        
+        <script>
+            (function() {
+                
+                var dd = $('dd');
+                
+                $('dd').filter(':nth-child(n+4)').addClass('hide');
+                
+                $('dl').on('mouseenter', 'dt', function() {
+                    $(this)
+                        .next()
+                            .slideDown(200)
+                            .siblings('dd')
+                                .slideUp(200);
+                });
+            })();
+        $("p").click(function(){
+            $(this).hide()
+                .next()
+                    alert("IT'S LEVI*O*SA NOT LEVIO*SAR*!");
+                
+});    
+            
+        </script>
+
+    </body>
+
+</html>

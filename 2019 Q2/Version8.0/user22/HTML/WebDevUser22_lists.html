@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<div id="Script and stlye">
+	<link href="../CSS/day.css" rel="stylesheet" type="text/css">
+	<script src="../JS/jquery-3.4.1.js"></script>
+    <title></title>
+	</div>
+<style>
+	p {
+		margin-left: 50px;
+		margin-bottom: 3px;
+		margin-top: 3px;
+		font-family: "Comic Sans MS";
+		font-size: 18px;
+	}
+	#img img {
+		border: solid black 2px;
+	}
+	.callout4 .close2 {
+		color: black;
+		top: -3px;
+		right: 10px;
+		font-size: 30px;
+		cursor: pointer;
+		font-family: Arial, Helvetica, sans-serif;
+		position: absolute;
+	}
+	.close2:hover {
+		color: lightgray;
+	}	
+	.callout {
+		position: fixed;
+		bottom: 35px;
+		right: 20px;
+		margin-left: 20px;
+		max-width: 300px;
+	}
+	.callout2 {
+		position: fixed;
+		bottom: 270px;
+		left: 90px;
+		margin-right: 20px;
+		max-width: 300px;
+	}
+	.callout3 {
+		position: fixed;
+		bottom: 400px;
+		right: 130px;
+		margin-left: 20px;
+		max-width: 300px;
+	}
+	.callout4 {
+		position: fixed;
+		bottom: 100px;
+		right: 200px;
+		margin-left: 20px;
+		max-width: 456px;
+		visibility: hidden;
+	}
+	.callout-header {
+		padding: 25px;
+		background: #555;
+		font-size: 30px;
+		color: white;
+		font-family: "Comic Sans MS"
+	}
+	.callout-contain {
+		padding: 15px;
+		background-color: #ccc;
+		color: black;
+	}
+	.close {
+		position: absolute;
+		top: 5px;
+		right: 15px;
+		color: white;
+		font-size: 30px;
+		cursor: pointer;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	.close:hover {
+		color: lightgray;
+	}
+	body {
+		height: 2000px;
+	}
+	h2 {
+		text-align: left;
+	}
+	@-webkit-keyframes roll {
+	from { -webkit-transform: rotate(0deg) }
+	to { -webkit-transform: rotate(360deg) }
+	}
+
+	@-moz-keyframes roll {
+	from { -moz-transform: rotate(0deg) }
+	to { -moz-transform: rotate(360deg) }
+	}
+
+	@keyframes roll {
+	from { transform: rotate(0deg) }
+	to { transform: rotate(360deg) }
+	}
+
+	body {
+	-moz-animation-name: roll;
+	-moz-animation-duration: 2s;
+	-moz-animation-iteration-count: 1;
+	-webkit-animation-name: roll;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: 1;
+	}
+</style>
+</head>
+<body>
+<div class="topnav">
+	<a href="../index.html">Home</a>
+	<a href="webDevUser22_music.html">Food</a>
+	<a href="WebDevUser22_Games.html">Bad Games</a>
+	<a class="active" href="WebDevUser22_lists.html">IDK</a>
+	<a href="FAQ.php">FAQ</a>
+	<a href="../kanji.php">Kanji Ranking</a>
+	<div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Settings
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+	<div id="stylebutton" display="block">
+		<button data-file="day" class="button" id="light">Light Mode</button>
+		<button data-file="night" class="button">Objectivly Better Mode</button>
+	</div>
+  </div>	
+  </div> 
+</div>
+<center><h1>Lists</h1></center>
+<br><br>
+<div id="content"> 
+    <br>  
+    <br>
+ <h2>This is a list</h2>
+    <ol>
+      <li>Numba Wan</li>
+      <li>Numba Dos</li>
+      <li>Numba San</li>
+    </ol>
+      
+    <h2>This is also a list</h2>
+    <ul><li>A</li>
+    <li>non</li>
+    <li>numbered</li>
+    <li>one</li></ul>
+      
+      </div>
+<div class="callout">
+	<div class="callout-header">Hey you!</div>
+<span class="close">x</span>
+	<div class="callout-contain">This is 1 of 3 text callouts</div>
+</div>
+<div class="callout2">
+	<div class="callout-header">Hey you!</div>
+<span class="close">x</span>
+	<div class="callout-contain">This is 1 of 3 text callouts</div>
+</div>
+<div class="callout3">
+	<div class="callout-header">Hey you!</div>
+<span class="close">x</span>
+	<div class="callout-contain">This is 1 of 3 text callouts</div>
+</div>
+<div id="img" class="callout4">
+<img src="../Images/bg.png">
+<span class="close2" onclick="this.parentElement.style.display='none';">x</span>
+</div>
+<div id="trubbish">
+	<img src="https://cdn.bulbagarden.net/upload/e/e2/568Trubbish.png">
+</div>
+<script>
+	$(".close").on('click', function(){
+		this.parentElement.style.display='none';
+		if ( $("span.close:visible").length === 0) {
+document.getElementById("img").style.visibility = 'visible';
+			console.log("all are hidden");
+		}
+			
+		
+	});
+	
+</script>
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+	var link = $('link');
+	$('#stylebutton .button').on('click', function() {	
+			var $this = $(this);
+			var stylesheet = $(this).data('file');
+			link.attr('href', '../' + 'CSS/' + stylesheet + '.css');
+			$this
+			.siblings('button')
+				.removeAttr('disabled')
+				.end()
+				.attr('disabled', 'disabled')
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+     
+    <title>jQuery Accordion</title>
+     <link rel="stylesheet" href="CSS/accordionstyle.css">
+    <meta charset=utf-8>
+ 
+</head>
+
+<body>
+
+<dl>
+    <dt>What are your hours?</dt>
+    <dd>We are open 24/7.</dd>
+    <dt>What are your hours?</dt>
+    <dd>We are open 24/7.</dd> 
+    <dt>What are your hours?</dt>
+    <dd>We are open 24/7.</dd> 
+    <dt>What are your hours?</dt>
+    <dd>We are open 24/7.</dd>
+    <dt>What are your hours?</dt>
+    <dd>We are open 24/7.</dd> 
+    
+</dl>  
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    
+<script>
+
+(function() {
+    
+    var dd = $('dd');
+    
+    dd.filter(':nth-child(n+4)').addClass('hide');
+    
+    $('dt').on('mouseenter', function() {
+        $(this)
+            .next()
+                .slideDown(200)
+                .siblings('dd')
+                    .slideUp(200);
+    })
+})();
+    
+    
+</script>
+    
+</body>
+</html>

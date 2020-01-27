@@ -1,0 +1,36 @@
+body{
+width: 500px;
+	
+    margin: auto;
+    text-align: center;
+    padding: 0;
+      color: #000000;
+    background-image: url("../images/WebDevUser09_QM.png");
+    
+}
+ 
+
+dl{
+
+}
+
+dd{
+margin: 0;	    
+padding: 1em 0;
+}
+
+dt{
+cursor: pointer;    	    
+font-weight: bold;    
+font-size : 1.5em;    
+line-height: 2em;    
+background: #ffffff;    
+border-bottom: 1px solid #000000;    
+border-top: 1px solid black;}
+
+dt:first-child { border-top: none; }
+
+dt:nth-last-child(2) { border-bottom: none; }
+.hide { display: none;}
+
+

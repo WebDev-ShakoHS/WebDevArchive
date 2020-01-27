@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <title>Aryan Intro to jQuery </title>
+        
+        <script src="JS/jquery-3.4.1.js"> </script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="day.css"> 
+        <style>
+        <meta charset=utf-8>
+	<title></title>
+
+
+            ul li{
+                color: green;
+            }
+            
+            h3{
+                color: purple;
+            }
+            
+            .emphasis {font-variant-caps: all-petite-caps}
+        </style>
+               
+        
+<script>
+        $(document).ready(function() {
+    $('h3').addClass('emphasis');
+    });
+        
+        
+        
+        </script>
+    </head>
+    
+<body>
+    
+    
+<dl>
+	<dt>What is your first name?</dt>
+	<dd>Aryan.</dd>
+	<dt>What is your last name?</dt>
+	<dd>Padmanabhan.</dd>
+	<dt>What is your favorite color?</dt>
+	<dd>Black.</dd>
+	<dt>What is your favorite subject?</dt>
+	<dd>Web Development.</dd>
+	<dt>How old are you??</dt>
+	<dd>15.</dd>
+</dl>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+
+
+</script>
+    <h3> Football standings NFC</h3>
+    <ul> <li>Packers</li><li>Vikings</li>
+         <li>Bears</li><li>Lions</li></ul>
+    <button data-file="day">Day</button>
+    <button data-file="night">Night</button>
+    
+    <script>
+        
+        $('ul li').addClass ('ul li');
+        $('h3').addClass ('h3');
+ 
+        
+   (function(){
+       var link = $('link');
+       $('button').click(function() {
+           var $this = $(this);
+      var stylesheet = $this.data('file');
+           $(this).siblings('button').removeAttr('disabled');
+           console.log(stylesheet);
+           $('link').attr('href', stylesheet +'.css');
+           $this.attr('disabled', 'disabled');
+           
+    
+     
+           
+           
+           
+           
+           
+           
+       });
+   })();
+    
+    </script>
+    
+    
+    
+    
+    
+    </body>
+</html>

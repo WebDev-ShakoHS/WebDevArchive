@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+     
+    <title>jQuery Accordion</title>
+     <link rel="stylesheet" href="file:///Users/228442/Documents/GitHub/WebDev2/Version7.0/user18/CSS/accordionstyle.css">
+    
+    <meta charset=utf-8>
+    
+    
+ 
+</head>
+<body>
+<div class= my-nav>
+<!--    <nav class="navbar navbar-expand-lg navbar-dark primary-color">-->
+
+
+  <!-- Collapse button -->
+<!--
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+-->
+
+  <!-- Collapsible content -->
+<!--  <div class="collapse navbar-collapse my-width" id="basicExampleNav">-->
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="file:///Users/228442/Documents/GitHub/WebDev2/Version7.0/user18/index.html">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Global Warming</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Climate change</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">Problems</a>
+      </li>
+      
+
+    </ul>
+    <!-- Links -->
+
+    
+<!--  </div>-->
+  <!-- Collapsible content -->
+<!--        </nav>-->
+</div>
+
+<!--/.Navbar-->
+
+
+<!--
+        <div class="collapse navbar-collapse">
+
+           <ul class="nav navbar-nav">
+               
+            <li class="navbar-brand" href="index.html">Home</li>
+
+            <li class="active"><a href="/AboutMe">Global Warming</a></li>
+
+            <li><a href="webDevUser18_list.html">Climate Change</a></li>
+
+            <li><a href="webDevUser18_music.html">Problems</a></li>
+
+            <li><a href="jqueryaccordion.html">How you can help</a></li>
+
+          </ul>
+
+        </div>/.nav-collapse 
+-->
+
+
+
+
+
+<div class="my-class" id="content">
+
+
+<dl>
+    <dt>What are your hours?</dt>
+    <dd>We are open 24/7.</dd>
+    <dt>What are your hours?</dt>
+    <dd>We are open 24/7.</dd> 
+    <dt>What are your hours?</dt>
+    <dd>We are open 24/7.</dd> 
+    <dt>What are your hours?</dt>
+    <dd>We are open 24/7.</dd>
+    <dt>What are your hours?</dt>
+    <dd>We are open 24/7.</dd> 
+    
+</dl>  
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+
+<script>
+(function() {
+    
+    var dd = $('dd');
+    
+    dd.filter(':nth-child(n+4)').addClass('hide');
+    
+    $('dt').on('mouseenter', function() {
+        $(this)
+            .next()
+                .slideDown(200)
+                .siblings('dd')
+                    .slideUp(200);
+    })
+})();    
+    
+</script>
+
+  
+    
+
+</div>
+</body>
+
+</html>

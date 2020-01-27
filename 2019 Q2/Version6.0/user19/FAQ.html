@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charsel=utf-8>
+    <title>Aidan's Delightful Tabs</title>
+    <link rel="stylesheet" href="CSS/FAQ.css">
+</head>
+<body>
+  
+<dl>
+    <dt>Background Randomizer</dt>
+    <dd><button class='button button1'>Random Background</button></dd>
+    <dt>Will you scroll down?</dt>
+    <dd>Maybe</dd>
+    <dt>Will you keep going?</dt>
+    <dd>Most Likely</dd>
+    <dt>Will you win?</dt>
+    <dd>I hope</dd>
+    <dt>Will you try?</dt>
+    <dd><a href="https://play2048.co/">Yes</a></dd>
+    </dl>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    
+    
+<script>
+(function() {
+        
+    $('dd').filter(':nth-child(n+4)').addClass('hide');
+    
+    $('dl').on('mouseenter','dt', function(){
+        $(this)
+            .next()
+                .slideDown(200)
+                .siblings('dd')
+                    .slideUp(200);
+    })
+ 
+})();
+</script>  
+    
+
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<html>
+
+<head>
+   <meta charset=utf-8> 
+<title>Home</title>    
+    <link href="CSS/home-style.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="shortcut icon" href="CSS/shazam.ico"/>
+</head>
+    
+<h1>Welcome to my website</h1>
+
+<body>
+<h3>Brief overview of my website</h3>
+
+   <p> If there's one thing you should know about me, it's that I really, <i>really</i> enjoy superheroes. My <strike>obsession</strike> appreciation of them is what I'm using as the theme for this website. So, if you're interested in the nerdism that my mental processes constantly revolve around, check out some of my other pages using the tabs on the left.</p>
+
+</body>
+<dl>
+	<dt>Home</dt>
+	<dd><button class="Home"><a href='index.html'>Home</a></button></dd>
+	<dt>About</dt>
+	<dd><button class="AboutMe"><a href='webDevUser24.html'>About Me</a></button></dd>
+	<dt>My Heroes</dt>
+	<dd><button class="Heroes"><a href="heroes.html">My Favorite Superheroes</a></button></dd>
+	<dt>Cool Powers</dt>
+	<dd><button class="Powers"><a href="powers.html">Cool Powers I'd Want</a></button></dd>
+    <dt>Questions</dt>
+	<dd><button class="Questions"><a href="questions.html">Miscellaneous Questions</a></button></dd>
+</dl>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+    </script>
+</html>

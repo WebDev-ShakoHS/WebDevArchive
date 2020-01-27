@@ -1,0 +1,143 @@
+body {
+    font-family: "Marker Felt", "Comic Sans MS", fantasy;
+	color: #ff0000;
+}
+
+h1 {
+	font-size: 1.3em;
+	text-align: center;
+}
+
+h2{
+        font-size: 1.1em;
+    text-align: center
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	border-collapse: collapse;
+	cellspacing: 0px;
+}
+
+tr {
+	border: 1px solid #ffffff;
+	text-align: center;
+	background-color:#9FB6CD; 
+}
+
+th {
+	text-align: center;
+	color: #ffffff;
+	background-color: #003366;
+}
+img {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  height: 20%;
+
+    
+}
+body{ 
+    background-image: url(black.png)
+}
+=======
+.button {
+    -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  background-color: gray; 
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button {
+  float: left;
+}
+.button:hover {
+  background-color: white;
+    color: grey;
+}
+
+.button1 {
+     -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  border-radius: 2px;
+    background-color: grey
+}
+.button1 {
+  float: left;
+}
+.button1:hover {
+  background-color: lightcoral; /* Green */
+  color: grey;
+}
+.button2 {
+    -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  border-radius: 2px;
+    background-color: grey
+}
+.button2 {
+  float: left;
+}
+.button2:hover {
+  background-color: lightgoldenrodyellow; /* Green */
+  color: grey;
+}
+
+.button3 {
+    -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+    border-radius: 2px;
+   background-color: grey;
+}
+.button3 {
+  float: left;
+}
+.button3:hover {
+  background-color: lightgreen; /* Green */
+    color: grey;
+}
+.button4 {
+    -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+    border-radius: 2px;
+   background-color: grey;
+    color: grey;
+}
+.button4 {
+  float: left;
+}
+.button4:hover {
+  background-color: lightcyan; /* Green */
+    color: grey;
+}
+.button5{
+    -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+    border-radius: 2px;
+   background-color: grey;
+}
+.button5 {
+  float: left;
+}
+.button5:hover {
+  background-color: lightblue; /* Green */
+    color: grey;
+}
+.content{
+    color:magenta;
+    text-align: right;
+}
+   #morecontent {
+  background-color: lightgray;
+} 

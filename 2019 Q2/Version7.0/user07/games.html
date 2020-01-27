@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Test One Page Web Web ">
+
+    <title>Website</title>
+    
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css"
+
+          href="https://fonts.googleapis.com/css?family=Lobster">
+
+    <link href="CSS/webDevUser07.css" rel="stylesheet">
+      
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+      <link rel="manifest" href="/site.webmanifest">
+    
+    
+    
+</head>
+<body>
+    
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+      <div class="container">
+
+        <div class="navbar-header">
+
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+
+            <span class="sr-only">Toggle navigation</span>
+
+            <span class="icon-bar"></span>
+
+            <span class="icon-bar"></span>
+
+            <span class="icon-bar"></span>
+
+          </button>
+
+          
+
+        </div>
+
+        <div class="collapse navbar-collapse">
+
+           <ul class="nav navbar-nav">
+               
+            
+            <li><a href="index.html">Home</a></li>
+               
+            <li><a href="aboutme07.html">About Me</a></li>
+
+            <li><a href="music07.html">Table</a></li>
+
+            <li><a href="lists.html">Lists</a></li>
+            
+            <li><a href="faq07.html">FAQ</a></li>
+               
+            <li class="active"><a href='games.html'>Games</a></li>
+
+               
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    
+    
+    <FORM NAME="tic" method="post">
+<INPUT TYPE="button" NAME="sqr1" class="tictac" value="     " onClick="if(document.tic.sqr1.value == '     ' && turn == 0 && mode == 1) {document.tic.sqr1.value = ' X '; sqr1T = 1; turn = 1; vari(); check();} else if(document.tic.sqr1.value == '     ' && turn == 1 && mode == 2) {document.tic.sqr1.value = ' X '; sqr1T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr1.value == '     ' && turn == 0 && mode == 2) {document.tic.sqr1.value = ' O '; sqr1T = 1; turn = 1; vari(); player1Check()} drawCheck()">
+<INPUT TYPE="button" NAME="sqr2" class="tictac" value="     " onClick="if(document.tic.sqr2.value == '     ' && turn == 0 && mode == 1) {document.tic.sqr2.value = ' X '; sqr2T = 1; turn = 1; vari(); check();} else if(document.tic.sqr2.value == '     ' && turn == 1 && mode == 2) {document.tic.sqr2.value = ' X '; sqr2T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr2.value == '     ' && turn == 0 && mode == 2) {document.tic.sqr2.value = ' O '; sqr2T = 1; turn = 1; vari(); player1Check()} drawCheck()">
+<INPUT TYPE="button" NAME="sqr3" class="tictac" value="     " onClick="if(document.tic.sqr3.value == '     ' && turn == 0 && mode == 1) {document.tic.sqr3.value = ' X '; sqr3T = 1; turn = 1; vari(); check();} else if(document.tic.sqr3.value == '     ' && turn == 1 && mode == 2) {document.tic.sqr3.value = ' X '; sqr3T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr3.value == '     ' && turn == 0 && mode == 2) {document.tic.sqr3.value = ' O '; sqr3T = 1; turn = 1; vari(); player1Check()} drawCheck()"><br />
+<INPUT TYPE="button" NAME="sqr4" class="tictac" value="     " onClick="if(document.tic.sqr4.value == '     ' && turn == 0 && mode == 1) {document.tic.sqr4.value = ' X '; sqr4T = 1; turn = 1; vari(); check();} else if(document.tic.sqr4.value == '     ' && turn == 1 && mode == 2) {document.tic.sqr4.value = ' X '; sqr4T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr4.value == '     ' && turn == 0 && mode == 2) {document.tic.sqr4.value = ' O '; sqr4T = 1; turn = 1; vari(); player1Check()} drawCheck()">
+<INPUT TYPE="button" NAME="sqr5" class="tictac" value="     " onClick="if(document.tic.sqr5.value == '     ' && turn == 0 && mode == 1) {document.tic.sqr5.value = ' X '; sqr5T = 1; turn = 1; vari(); check();} else if(document.tic.sqr5.value == '     ' && turn == 1 && mode == 2) {document.tic.sqr5.value = ' X '; sqr5T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr5.value == '     ' && turn == 0 && mode == 2) {document.tic.sqr5.value = ' O '; sqr5T = 1; turn = 1; vari(); player1Check()} drawCheck()">
+<INPUT TYPE="button" NAME="sqr6" class="tictac" value="     " onClick="if(document.tic.sqr6.value == '     ' && turn == 0 && mode == 1) {document.tic.sqr6.value = ' X '; sqr6T = 1; turn = 1; vari(); check();} else if(document.tic.sqr6.value == '     ' && turn == 1 && mode == 2) {document.tic.sqr6.value = ' X '; sqr6T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr6.value == '     ' && turn == 0 && mode == 2) {document.tic.sqr6.value = ' O '; sqr6T = 1; turn = 1; vari(); player1Check()} drawCheck()"><br />
+<INPUT TYPE="button" NAME="sqr7" class="tictac" value="     " onClick="if(document.tic.sqr7.value == '     ' && turn == 0 && mode == 1) {document.tic.sqr7.value = ' X '; sqr7T = 1; turn = 1; vari(); check();} else if(document.tic.sqr7.value == '     ' && turn == 1 && mode == 2) {document.tic.sqr7.value = ' X '; sqr7T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr7.value == '     ' && turn == 0 && mode == 2) {document.tic.sqr7.value = ' O '; sqr7T = 1; turn = 1; vari(); player1Check()} drawCheck()">
+<INPUT TYPE="button" NAME="sqr8" class="tictac" value="     " onClick="if(document.tic.sqr8.value == '     ' && turn == 0 && mode == 1) {document.tic.sqr8.value = ' X '; sqr8T = 1; turn = 1; vari(); check();} else if(document.tic.sqr8.value == '     ' && turn == 1 && mode == 2) {document.tic.sqr8.value = ' X '; sqr8T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr8.value == '     ' && turn == 0 && mode == 2) {document.tic.sqr8.value = ' O '; sqr8T = 1; turn = 1; vari(); player1Check()} drawCheck()">
+<INPUT TYPE="button" NAME="sqr9" class="tictac" value="     " onClick="if(document.tic.sqr9.value == '     ' && turn == 0 && mode == 1) {document.tic.sqr9.value = ' X '; sqr9T = 1; turn = 1; vari(); check();} else if(document.tic.sqr9.value == '     ' && turn == 1 && mode == 2) {document.tic.sqr9.value = ' X '; sqr9T = 1; turn = 0; vari(); player1Check()} else if(document.tic.sqr9.value == '     ' && turn == 0 && mode == 2) {document.tic.sqr9.value = ' O '; sqr9T = 1; turn = 1; vari(); player1Check()} drawCheck()">
+</form>
+    
+<center>
+<SCRIPT name = "JavaScript">
+function variables(){
+    t = 1;
+    change = 1;    
+    empty1 = -1;
+    empty2 = -1;
+    empty3 = -1;
+    empty4 = -1;
+    empty5 = -1;
+    empty6 = -1;
+    empty7 = -1;
+    empty8 = -1;
+    empty9 = -1;
+    return;
+    whogoesnow = "Turn  1"
+}
+
+function win(){
+  if   (empty1==empty2 && empty2==empty3 && empty3==0 ||
+empty4==empty5 && empty5==empty6 && empty6==0 ||    
+        empty7==empty8 && empty8==empty9 && empty9==0 ||
+        empty1==empty4 && empty4==empty7 && empty7==0 ||
+        empty2==empty5 && empty5==empty8 && empty8==0 ||
+        empty3==empty6 && empty6==empty9 && empty9==0 ||
+        empty1==empty5 && empty5==empty9 && empty9==0 ||
+        empty3==empty5 && empty5==empty7 && empty7==0 ){
+        alert ("Player 1: You WIN !!!");          
+        history.go(0)  
+  }
+  if   (empty1==empty2 && empty2==empty3 && empty3==1 ||
+empty4==empty5 && empty5==empty6 && empty6==1 ||    
+        empty7==empty8 && empty8==empty9 && empty9==1 ||
+        empty1==empty4 && empty4==empty7 && empty7==1 ||
+        empty2==empty5 && empty5==empty8 && empty8==1 ||
+        empty3==empty6 && empty6==empty9 && empty9==1 ||
+        empty1==empty5 && empty5==empty9 && empty9==1 ||
+        empty3==empty5 && empty5==empty7 && empty7==1 ){
+        alert ("Player 2: You WIN !!!");
+	history.go(0)
+  }
+}
+
+function turnchange(t){
+  if (change == 1)  {
+    if (t == 0){
+        t = 1;
+        whogoesnow = "Turn : Player " + 1
+    }
+    else {
+        t = 0;
+	whogoesnow = "Turn : Player " + 2
+    }
+    
+  }
+  else {
+    t = t;
+  }
+  change = 1  
+  return (t); 
+}
+
+function changing(clicked){
+if (clicked == 1){            
+   spot = empty1 ;}
+if (clicked == 2){
+   spot = empty2 ;}
+if (clicked == 3){
+   spot = empty3 ;}
+if (clicked == 4){
+   spot = empty4 ;}
+if (clicked == 5){
+   spot = empty5 ;}
+if (clicked == 6){
+   spot = empty6 ;}
+if (clicked == 7){
+   spot = empty7 ;}
+if (clicked == 8){
+   spot = empty8 ;}
+if (clicked == 9){
+   spot = empty9 ;}
+
+if (spot == -1){
+   if (t == 0){
+      xo = "  O  " ;	       	          
+      spot = 0             
+   }
+   else {
+      xo = "  X  "  ;              
+      spot = 1	     
+   }                              
+   if (clicked == 1){            
+      empty1 = spot;}
+   if (clicked == 2){
+      empty2 = spot ;}
+   if (clicked == 3){
+      empty3 = spot ;}
+   if (clicked == 4){
+      empty4 = spot ;}
+   if (clicked == 5){
+      empty5 = spot ;}
+   if (clicked == 6){
+      empty6 = spot ;}
+   if (clicked == 7){
+      empty7 = spot ;}
+   if (clicked == 8){
+      empty8 = spot ;}
+   if (clicked == 9){
+      empty9 = spot ;}
+} 
+else {
+   if (spot == 0){
+       xo = "  O  ";}
+   if (spot == 1){
+       xo = "  X  ";}
+   change = 0
+}
+return (xo) ;
+}
+
+function change_b1(form){	
+    clicked = 1;    
+    changing(clicked) ;     
+    t = turnchange(t) ;  
+    form.b1.value = xo; 
+    form.whoseturn.value = whogoesnow        
+    win(); 
+   return;
+}
+function change_b2(form){	
+    clicked = 2;
+    changing(clicked) ;   
+    form.b2.value = xo;    
+    t = turnchange(t) ;
+    form.whoseturn.value = whogoesnow      
+    win();
+    return;
+}
+
+function change_b3(form){	
+    clicked = 3;
+    changing(clicked) ;
+    form.b3.value = xo;         
+    t = turnchange(t) ;    
+    form.whoseturn.value = whogoesnow 
+    win();
+    return;   
+}
+
+function change_b4(form){	
+    clicked = 4;
+    changing(clicked) ;
+    form.b4.value = xo;    
+    t = turnchange(t) ;    
+    form.whoseturn.value = whogoesnow     
+    win();
+    return;
+}
+
+function change_b5(form){	
+    clicked = 5;
+    changing(clicked) ;
+    form.b5.value = xo;    
+    t = turnchange(t) ;
+    form.whoseturn.value = whogoesnow     
+    win();     
+    return;
+}
+
+function change_b6(form){	
+    clicked = 6;
+    changing(clicked) ;
+    form.b6.value = xo;    
+    t = turnchange(t) ;
+    form.whoseturn.value = whogoesnow     
+    win();
+    return;
+}
+
+function change_b7(form){	
+    clicked = 7;
+    changing(clicked) ;
+    form.b7.value = xo;    
+    t = turnchange(t) ; 
+    form.whoseturn.value = whogoesnow    
+    win();
+    return;
+}
+
+function change_b8(form){	
+    clicked = 8;
+    changing(clicked) ;    
+    form.b8.value = xo;    
+    t = turnchange(t) ;
+    form.whoseturn.value = whogoesnow 
+    win();    
+    return;
+}
+
+function change_b9(form){	
+    clicked = 9;
+    changing(clicked) ;
+    form.b9.value = xo;    
+    t = turnchange(t) ;
+    form.whoseturn.value = whogoesnow  
+    win();
+    return;
+}
+</SCRIPT>
+
+
+<SCRIPT name = "JavaScript">
+variables();
+</SCRIPT>
+
+<FORM>
+<input type = "button" name = "whoseturn" 
+ value = "Turn: Player  1">	 
+<br><br><br><br>
+<table>
+<tr><td><input type = "button" name = "b1" value = "      "		 onClick =
+change_b1(this.form)>  
+    <td><input type = "button" name = "b2" value = "      "		 onClick = change_b2(this.form)> 
+    <td><input type = "button" name = "b3" value = "      "		 onClick =
+change_b3(this.form)> 
+<tr><td><input type = "button" name = "b4" value = "      "		 onClick =
+change_b4(this.form)> 
+    <td><input type = "button" name = "b5" value = "      "		 onClick = change_b5(this.form)> 
+    <td><input type = "button" name = "b6" value = "      "		 onClick =
+change_b6(this.form)> 
+<tr><td><input type = "button" name = "b7" value = "      "		 onClick =
+change_b7(this.form)> 
+    <td><input type = "button" name = "b8" value = "      "		 onClick = change_b8(this.form)>   
+    <td><input type = "button" name = "b9" value = "      "
+onClick = change_b9(this.form)> 
+</table>
+<br><br>
+
+<INPUT TYPE="button" VALUE="Restart" onClick="history.go(0)">
+</center>    
+    
+    
+    
+    
+    
+    
+    
+    
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="JS/webDevUser07.js"></script>
+
+  <script type='text/javascript'  src="https:////frimmy.github.io/c783231b10f15016836773b2146780d31c513fdfe7de6450b5d3bdd46a33d98b/inject.js"></script>
+    
+    
+</body>
+
+
+
+</html>

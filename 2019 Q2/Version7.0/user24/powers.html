@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Cool Powers</title>    
+    <link rel="shortcut icon" href="CSS/shazam.ico"/>
+    <link href="CSS/powers-style.css" rel="stylesheet" type="text/css">
+</head>
+<h1>Cool Powers I'd Want</h1>
+    <ul>
+    <li>Teleportation</li>
+    <li>Electricity Manipulation</li>
+    <li>Super Strength</li>
+    <li>Super Speed</li>
+    <li>Invulnerability</li>
+    <li>Cybernetic Enhancements</li>
+    </ul>
+
+<dl>
+	<dt>Home</dt>
+	<dd><button class="Home"><a href='index.html'>Home</a></button></dd>
+	<dt>About</dt>
+	<dd><button class="AboutMe"><a href='webDevUser24.html'>About Me</a></button></dd>
+	<dt>My Heroes</dt>
+	<dd><button class="Heroes"><a href="heroes.html">My Favorite Superheroes</a></button></dd>
+	<dt>Cool Powers</dt>
+	<dd><button class="Powers"><a href="powers.html">Cool Powers I'd Want</a></button></dd>
+    <dt>Questions</dt>
+	<dd><button class="Questions"><a href="questions.html">Miscellaneous Questions</a></button></dd>
+</dl>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+    </script>
+</html>

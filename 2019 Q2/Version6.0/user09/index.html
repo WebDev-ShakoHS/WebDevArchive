@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <Title> Fung Intro to jQuery</Title>
+        <script src="JS/jquery-3.4.1.js"></script>
+        <link rel ="stylesheet" href="CSS/Day.css">
+        <link rel="stylesheet" href="CSS/Style.css">
+        
+        <style>
+            ul li{ 
+                color: red;
+            }
+            
+            .packers{
+                color: green;
+
+            }
+            .vikings{
+                color: purple;
+            }
+            .bears{
+                color: navy;
+            }
+            .lions{ 
+                color: blue;
+            }
+            .emphasis { font-weight: bold;}
+        </style>
+            <script>
+                        $(document).ready(function(){
+             $('li:first-child').addClass('emphasis');
+            });
+            </script>
+            
+    </head>
+
+    <body>
+        
+        <dl>
+	<dt>What are your hours?</dt>
+	<dd>We are open 24/7.</dd>
+	<dt>How long did it take to make the website?</dt>
+	<dd>About 2 weeks ago</dd>
+	<dt>How long did it take for you to come up with music list?</dt>
+	<dd>5 Minutes</dd>
+	<dt>Are you going to keep udpating this website?</dt>
+	<dd>If I need to.</dd>
+	<dt>What's your inspirtaion?</dt>
+	<dd>I like Music.</dd>
+</dl>
+            
+        
+        <button data-file="day">Day</button>
+        <button data-file="night">Night</button>
+        
+        <script> 
+            
+            (function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+       
+        (function() {
+            var link = $('link');
+            $('button').click( function(){
+                var $this = $(this),
+                    stylesheet = $this.data('file');
+                
+                link.attr('href',"CSS/"  +  stylesheet + '.css');
+                
+                $this
+                .siblings('button')
+                .removeAttr('disabled')
+                .end()
+                .attr('disabled', 'disabled');
+            });
+        })();
+            
+            $('ul li > a' )
+            
+            $(function() {
+        $('li:first-child').addClass('emphasis');
+            });
+                
+
+            
+        </script>
+           
+    </body>
+
+</html>

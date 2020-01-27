@@ -1,0 +1,134 @@
+<html>
+<head>
+    <link href="CSS/bootstrapEdit.css" rel="stylesheet">
+      
+    <link href="CSS/MainCSS.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+
+    <link rel="stylesheet" type="text/css"
+
+          href="https://fonts.googleapis.com/css?family=Lobster">
+
+
+ <title>Clone App</title>
+  </head>
+
+
+  <body>
+
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+      <div class="container">
+
+        <div class="navbar-header">
+
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+
+            <span class="sr-only">Toggle navigation</span>
+
+            <span class="icon-bar"></span>
+
+            <span class="icon-bar"></span>
+
+            <span class="icon-bar"></span>
+
+          </button>
+
+         
+
+        </div>
+
+        <div class="collapse navbar-collapse">
+
+           <ul class="nav navbar-nav">
+                <li><a href="FAQ.html">Back</a></li>
+               
+               <li><a href="TryMe.html">Refresh</a></li>
+              
+          </ul>
+
+        </div><!--/.nav-collapse -->
+
+      </div>
+
+    </div>
+   
+    
+
+<body>
+<div class="container">
+    <br>
+    <br>
+    <br>
+    <br>
+    <center><p id="text">You touch me and I'll disappear</p></center>
+</div>
+    <p  id="text2">Im here now!</p>
+    <center><p  id="text3">Ok you can stop now.</p></center>
+    <center><bold><p id="text4">YOU CAN STOP I SAID</p></bold></center>
+    <center><p id="text5">I AM WARNING YOU!</p></center>
+    <center><p id="text6">OI KNOCK IT OFF!</p></center>
+<center><img src="images/explode.jpg" alt="Kaboom" style="cover" id="text7"></center>
+    <style>
+        #text5 {font-size: 10em;}
+        #text6 {font-size: 20em;}
+        {
+    background-image: url('images/explode.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+    </style>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    
+<script>
+    
+$(function() {
+    $('#text7').hide();
+     $('#text6').hide();
+     $('#text5').hide();
+     $('#text4').hide();
+    $('#text3').hide();
+   $('#text2').hide();
+   $('#text').click(function() {
+            $('#text').hide();
+            $('#text2').show();
+    });
+});
+    $(function() {
+    $('#text2').click(function() {
+            $('#text2').hide();
+            $('#text3').show();
+          });
+});
+    $(function() {
+    $('#text3').click(function() {
+            $('#text3').hide();
+            $('#text4').show();
+          });
+});
+    $(function() {
+    $('#text4').click(function() {
+            $('#text4').hide();
+            $('#text5').show();
+          });
+});
+     $(function() {
+    $('#text5').click(function() {
+            $('#text5').hide();
+            $('#text6').show();
+          });
+});
+    $(function() {
+    $('#text6').click(function() {
+            $('#text6').hide();
+            $('#text7').show();
+          });
+});
+</script>
+    
+</body>  
+</html>

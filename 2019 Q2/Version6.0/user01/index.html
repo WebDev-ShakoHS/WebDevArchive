@@ -1,0 +1,38 @@
+<html> 
+    <head>
+        <title>Brandon Intro to jQuery</title>
+        <script src="JS/jquery-3.4.1.js"></script>
+        <link rel= 'stylesheet'  href="CSS/day.css">        
+          <style>
+            .emphasis { font-weight:bolder;}
+        </style>
+        <script>
+            $(document).ready(function() {
+            $('li:first-child').addClass('emphasis')
+        });
+        </script>
+    </head>
+    <body>
+        <h1>command blocks</h1>
+        <button data-file="CSS/day">Day</button>
+        <button data-file="CSS/night">Night</button>
+        <h1>moment of</h1>
+        <ul><li>B</li><li>r</li><li>u</li><li>h</li></ul>
+        <script>
+            
+        (function(){
+            var link = $('link');
+            $('button').on('click', function() {
+                var $this = $(this),
+                    stylesheet = $this.data('file');
+                link.attr('href', stylesheet + '.css');
+                $this
+                    .siblings('button')
+                        .removeAttr('disabled')
+                        .end()
+                        .attr('disabled', 'disabled');
+            });
+        })();
+        </script>
+    </body>
+</html>

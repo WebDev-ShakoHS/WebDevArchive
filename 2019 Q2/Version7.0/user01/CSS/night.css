@@ -1,0 +1,9 @@
+body{
+    background: #ffffff url("../Images/Night.jpg") no-repeat;
+    background-size: cover;
+    color: dimgrey;
+}
+h1 {
+	font-size: 1.3em;
+    color: black;
+}

@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<title>FAQ</title>
+	<link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+<button data-file="good">Good</button>
+<button data-file="evil">Evil</button>
+<dl>
+	<dt>What college do you plan to attend?</dt>
+	<dd>I plan to attend Iowa State.</dd>
+	<dt>Do you have any siblings?</dt>
+	<dd>Yes, I have one younger sister.</dd>
+	<dt>What's your favorite class?</dt>
+	<dd>I really enjoy playing in band with my friends.</dd>
+	<dt>What type of music do you like?</dt>
+	<dd>I'm a big fan of power metal.</dd>
+	<dt>Do you own any pets?</dt>
+	<dd>I am the proud owner of 2 very good dogs.</dd>
+</dl>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+
+(function() {
+	
+	$('dd').filter(':nth-child(n+4)').addClass('hide');
+
+	$('dl').on('mouseenter', 'dt', function() {
+		$(this)
+			.next()
+				.slideDown(200)
+				.siblings('dd')
+					.slideUp(200);
+	});
+})();
+(function() {
+                $('button').click(function() {
+                    var stylesheet = $(this).text().toLowerCase();
+                    console.log(stylesheet);
+                    $('link').attr('href', stylesheet + '.css');
+                });
+            })();
+$(document).ready(function() {
+
+    $(document).mousemove(function(e) {
+        pointer = $('<img>').attr({'src':'pointer.png'});
+        $(document.body).append(pointer);
+        pointer.css({
+                        'position':'absolute',
+                        top: e.pageY +2 ,
+                        left: e.pageX +2
+                    }).fadeOut(1500);   
+    });
+});
+</script>
+
+</body>
+</html>

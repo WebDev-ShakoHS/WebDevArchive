@@ -1,0 +1,48 @@
+h1 {
+	text-align:left;
+    color:#A2A2A2;
+    font-size: 48px;
+}
+body {
+    font-family: "Marker Felt", "Comic Sans MS";
+    background-image: url("batman.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+p{
+    color:black;
+    text-align: right;
+    margin-left:60%;
+    font-size: 24px;
+}
+h3{
+    color:black;
+    text-align: right;
+    font-size: 32px;
+}
+button{
+    font-family: "Comic Sans MS";
+    font-size: 16px;
+    background-color:#A2A2A2;
+    color:#2F2F2F;
+    border-color: #2F2F2F;
+}
+dl{
+    margin-right:85%;
+}
+
+dd{
+margin: 0;	    
+}
+
+dt{
+cursor: pointer;    	    
+font-weight: bold;    
+font-size : 1.5em;
+color:#A2A2A2;
+line-height: 2em;}
+
+dt:first-child { border-top: none; }
+
+dt:nth-last-child(2) { border-bottom: none; }
+.hide { display: none;}
